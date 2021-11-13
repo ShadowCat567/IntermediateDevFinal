@@ -4,15 +4,40 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    BoxCollider2D boxCollider;
+
+    private void Awake()
     {
-        
+        boxCollider = GetComponent<BoxCollider2D>();
+        boxCollider.enabled = false;
+    }
+
+    void Attack()
+    {
+        if(Input.GetMouseButtonDown(0))
+        {
+            StartCoroutine(colliderActive());
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        Attack();
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Enemy")
+        {
+            Debug.Log("Enemy Hit");
+        }
+    }
+
+    IEnumerator colliderActive()
+    {
+        boxCollider.enabled = true;
+        yield return new WaitForSeconds(0.8f);
+        boxCollider.enabled = false;
     }
 }

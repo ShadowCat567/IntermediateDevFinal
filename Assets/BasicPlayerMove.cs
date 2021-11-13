@@ -9,6 +9,15 @@ public class BasicPlayerMove : MonoBehaviour
     [SerializeField] float moveSpeed = 5.0f;
     [SerializeField] float moveX;
 
+    enum currentWeapon
+    {
+        sword, spear, shield
+    }
+
+    [SerializeField] currentWeapon weaponInHand = currentWeapon.sword;
+
+    List<GameObject> weapons = new List<GameObject>();
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
