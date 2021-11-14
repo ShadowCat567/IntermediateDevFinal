@@ -30,7 +30,7 @@ public class PlayerAttack : MonoBehaviour
     {
         if(collision.gameObject.tag == "Enemy")
         {
-            Debug.Log("Enemy Hit");
+            collision.GetComponent<EnemyHealth>().enemyHealth -= 1;
         }
     }
 

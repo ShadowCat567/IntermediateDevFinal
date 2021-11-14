@@ -6,7 +6,7 @@ using TMPro;
 public class EnemyHealth : MonoBehaviour
 {
     public GameObject enemy;
-    public static int enemyHealth = 3;
+    public int enemyHealth = 3;
     public TMP_Text enemyHealthTxt;
 
     // Update is called once per frame
