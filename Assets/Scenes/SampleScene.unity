@@ -1030,6 +1030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df8c2a6ad03745e48a0c24f280712e09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1813968523}
   moveSpeed: 5
   moveX: 0
   swordObj: {fileID: 197617396}
