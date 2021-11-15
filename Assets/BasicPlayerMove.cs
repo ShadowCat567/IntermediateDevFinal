@@ -17,7 +17,7 @@ public class BasicPlayerMove : MonoBehaviour
     public GameObject sheildObj;
 
     float maxDashdistance = 5.0f;
-    bool dashing = true;
+    bool dashing;
     float dashSpeed = 180.0f;
 
     enum currentWeapon
@@ -72,6 +72,7 @@ public class BasicPlayerMove : MonoBehaviour
                 {
                  //   Debug.Log("using max distance");
                     distance = maxDashdistance;
+                    dashing = true;
                     ExecuteDash(distance, ray.collider);
                 }
 
@@ -79,6 +80,7 @@ public class BasicPlayerMove : MonoBehaviour
                 {
                   //  Debug.Log("Using enemy distance");
                     distance = enemyDistance;
+                    dashing = true;
                     ExecuteDash(distance, ray.collider);
                     ray.collider.GetComponent<EnemyHealth>().enemyHealth -= 1;
                 }
@@ -99,18 +101,9 @@ public class BasicPlayerMove : MonoBehaviour
 
             
 
-            if (Vector3.Distance(transform.position, enemy.transform.position) < 0.1f)
+            if (Vector3.Distance(transform.position, enemy.transform.position) < 0.5f)
             {
                 dashing = false;
-            }
-        }
-
-        else
-        {
-            if(Input.GetKeyDown(KeyCode.LeftShift))
-            {
-                dashing = true;
-                targetPositon = transform.position * distance;
             }
         }
     }
