@@ -32,15 +32,7 @@ public class movement : MonoBehaviour
             rb.AddForce(new Vector2(0, Jumpforce), ForceMode2D.Impulse);
         }
     }
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.gameObject.tag == "speedzone")
-        {
-            Debug.Log("fk");
-            //Playerspeed = Playerspeed * 3;
-
-        }
-    }
+   
     
     public void JumpZone()
     {
