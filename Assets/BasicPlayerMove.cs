@@ -20,6 +20,9 @@ public class BasicPlayerMove : MonoBehaviour
     bool dashing;
     float dashSpeed = 180.0f;
 
+    public bool shieldDash;
+    public float shieldDashSpeed = 200.0f;
+
     enum currentWeapon
     {
         none, sword, spear, shield
@@ -44,7 +47,7 @@ public class BasicPlayerMove : MonoBehaviour
         PlayerControls();
         TargetDash();
 
-        if(Input.GetKeyDown(KeyCode.E))
+        if(Input.GetKeyDown(KeyCode.LeftShift))
         {
             weaponChanger();
         }
@@ -102,6 +105,23 @@ public class BasicPlayerMove : MonoBehaviour
             if (Vector3.Distance(transform.position, enemy.transform.position) < 0.5f)
             {
                 dashing = false;
+            }
+        }
+    }
+
+    public void SpecialAttack(GameObject enemy)
+    {
+        //Debug.Log("Distance: " + distance.ToString());
+        Vector3 currentPositon = transform.position;
+       // Vector3 targetPosition = transform.position + Vector3.right * distance;
+
+        if (shieldDash)
+        {
+            transform.position = Vector2.Lerp(currentPositon, enemy.transform.position, shieldDashSpeed * Time.deltaTime);
+
+            if (Vector3.Distance(transform.position, enemy.transform.position) < 0.5f)
+            {
+                shieldDash = false;
             }
         }
     }
