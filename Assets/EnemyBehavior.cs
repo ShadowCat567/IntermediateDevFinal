@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyBehavior : MonoBehaviour
 {
     SpriteRenderer sr;
+    bool enemyStunned = false;
 
     private void Awake()
     {
@@ -26,7 +27,16 @@ public class EnemyBehavior : MonoBehaviour
 
     public void EnemyStunned()
     {
+        StartCoroutine(StunEnemy());
+    }
+
+    IEnumerator StunEnemy()
+    {
+        enemyStunned = true;
         Debug.Log("Enemy has been stunned");
         sr.color = Color.red;
+        yield return new WaitForSeconds(0.9f);
+        enemyStunned = false;
+        sr.color = Color.white;
     }
 }

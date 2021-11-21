@@ -291,6 +291,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32bd82814b1bb6f4aa536e0e853e009f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1813968523}
+  spear: {fileID: 314494719}
 --- !u!61 &314494722
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1051,6 +1053,8 @@ MonoBehaviour:
   sheildObj: {fileID: 2138997187}
   shieldDash: 0
   shieldDashSpeed: 100
+  spearMove: 0
+  spearMoveSpeed: 1000
   weaponInHand: 0
 --- !u!1 &2138997187
 GameObject:

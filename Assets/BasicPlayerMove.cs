@@ -23,6 +23,9 @@ public class BasicPlayerMove : MonoBehaviour
     public bool shieldDash;
     public float shieldDashSpeed = 200.0f;
 
+    public bool spearMove;
+    public float spearMoveSpeed = 500.0f;
+
     enum currentWeapon
     {
         none, sword, spear, shield
@@ -122,6 +125,21 @@ public class BasicPlayerMove : MonoBehaviour
             if (Vector3.Distance(transform.position, enemy.transform.position) < 0.5f)
             {
                 shieldDash = false;
+            }
+        }
+    }
+
+    public void MoveToSpear()
+    {
+        Vector3 currentpos = transform.position;
+
+        if(spearMove)
+        {
+            transform.position = Vector2.Lerp(currentpos, spearObj.transform.position, spearMoveSpeed * Time.deltaTime);
+
+            if(Vector3.Distance(transform.position, spearObj.transform.position) < 0.5f)
+            {
+                spearMove = false;
             }
         }
     }
