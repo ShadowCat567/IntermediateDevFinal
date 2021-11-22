@@ -15,17 +15,24 @@ public class BasicPlayerMove : MonoBehaviour
     public GameObject swordObj;
     public GameObject spearObj;
     public GameObject sheildObj;
+    public GameObject spearCore;
 
     float maxDashdistance = 5.0f;
     bool dashing;
     float dashSpeed = 180.0f;
 
-    enum currentWeapon
+    public bool shieldDash;
+    public float shieldDashSpeed = 200.0f;
+
+    public bool spearMove;
+    public float spearMoveSpeed = 500.0f;
+
+    public enum currentWeapon
     {
         none, sword, spear, shield
     }
 
-    [SerializeField] currentWeapon weaponInHand = currentWeapon.sword;
+    public currentWeapon weaponInHand = currentWeapon.sword;
 
     private void Awake()
     {
@@ -44,7 +51,7 @@ public class BasicPlayerMove : MonoBehaviour
         PlayerControls();
         TargetDash();
 
-        if(Input.GetKeyDown(KeyCode.E))
+        if(Input.GetKeyDown(KeyCode.LeftShift))
         {
             weaponChanger();
         }
@@ -90,7 +97,6 @@ public class BasicPlayerMove : MonoBehaviour
 
     void ExecuteDash(float distance, Collider2D enemy)
     {
-        Vector3 targetPositon;
         Vector3 currentPosition = transform.position;
 
         if (dashing)
@@ -99,11 +105,40 @@ public class BasicPlayerMove : MonoBehaviour
           //  Debug.Log("Dash distance: " + distance.ToString());
             transform.position = Vector2.Lerp(currentPosition, enemy.transform.position, dashSpeed * Time.deltaTime);
 
-            
 
             if (Vector3.Distance(transform.position, enemy.transform.position) < 0.5f)
             {
                 dashing = false;
+            }
+        }
+    }
+
+    public void SpecialAttack(GameObject enemy)
+    {
+        Vector3 currentPositon = transform.position;
+
+        if (shieldDash)
+        {
+            transform.position = Vector2.Lerp(currentPositon, enemy.transform.position, shieldDashSpeed * Time.deltaTime);
+
+            if (Vector3.Distance(transform.position, enemy.transform.position) < 0.5f)
+            {
+                shieldDash = false;
+            }
+        }
+    }
+
+    public void MoveToSpear()
+    {
+        Vector3 currentpos = transform.position;
+
+        if(spearMove)
+        {
+            transform.position = Vector2.Lerp(currentpos, spearCore.transform.position, spearMoveSpeed * Time.deltaTime);
+
+            if(Vector3.Distance(transform.position, spearCore.transform.position) < 0.5f)
+            {
+                spearMove = false;
             }
         }
     }
