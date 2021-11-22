@@ -7,6 +7,7 @@ public class PolearmAttack : MonoBehaviour
     BoxCollider2D boxCollider;
     public GameObject player;
     public GameObject spear;
+    public GameObject spearCore;
 
     float speed = 1000.0f;
 
@@ -49,7 +50,6 @@ public class PolearmAttack : MonoBehaviour
                 spear.transform.SetParent(null);
                 spearThrown = true;
             }
-            //perform special ability
         }
     }
 

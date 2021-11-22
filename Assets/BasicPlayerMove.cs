@@ -15,6 +15,7 @@ public class BasicPlayerMove : MonoBehaviour
     public GameObject swordObj;
     public GameObject spearObj;
     public GameObject sheildObj;
+    public GameObject spearCore;
 
     float maxDashdistance = 5.0f;
     bool dashing;
@@ -26,12 +27,12 @@ public class BasicPlayerMove : MonoBehaviour
     public bool spearMove;
     public float spearMoveSpeed = 500.0f;
 
-    enum currentWeapon
+    public enum currentWeapon
     {
         none, sword, spear, shield
     }
 
-    [SerializeField] currentWeapon weaponInHand = currentWeapon.sword;
+    public currentWeapon weaponInHand = currentWeapon.sword;
 
     private void Awake()
     {
@@ -96,7 +97,6 @@ public class BasicPlayerMove : MonoBehaviour
 
     void ExecuteDash(float distance, Collider2D enemy)
     {
-        Vector3 targetPositon;
         Vector3 currentPosition = transform.position;
 
         if (dashing)
@@ -114,9 +114,7 @@ public class BasicPlayerMove : MonoBehaviour
 
     public void SpecialAttack(GameObject enemy)
     {
-        //Debug.Log("Distance: " + distance.ToString());
         Vector3 currentPositon = transform.position;
-       // Vector3 targetPosition = transform.position + Vector3.right * distance;
 
         if (shieldDash)
         {
@@ -135,9 +133,9 @@ public class BasicPlayerMove : MonoBehaviour
 
         if(spearMove)
         {
-            transform.position = Vector2.Lerp(currentpos, spearObj.transform.position, spearMoveSpeed * Time.deltaTime);
+            transform.position = Vector2.Lerp(currentpos, spearCore.transform.position, spearMoveSpeed * Time.deltaTime);
 
-            if(Vector3.Distance(transform.position, spearObj.transform.position) < 0.5f)
+            if(Vector3.Distance(transform.position, spearCore.transform.position) < 0.5f)
             {
                 spearMove = false;
             }
