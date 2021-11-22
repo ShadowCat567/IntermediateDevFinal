@@ -4,7 +4,7 @@ OS: 'Windows 10 Home; OS build 19041.1348; Version 2004; 64bit' Language: 'en' P
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
 
  COMMAND LINE ARGUMENTS:
-C:\Program Files\Unity 2021.1.16f1\Editor\Unity.exe
+F:\16\Unity 2021.1.16f1\Editor\Unity.exe
 -adb2
 -batchMode
 -noUpm
@@ -125,52 +125,19 @@ Unloading 33 unused Assets to reduce memory usage. Loaded Objects now: 4300.
 Total: 7.757700 ms (FindLiveObjects: 0.629800 ms CreateObjectMapping: 0.395700 ms MarkObjects: 6.620800 ms  DeleteObjects: 0.109500 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 ->
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc ->
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b ->
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 ->
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 ->
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 ->
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 ->
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 ->
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 ->
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 ->
 ========================================================================
 Received Import Request.
   path: Assets/ShieldAttack.cs
   artifactKey: Guid(7cab37967c946d64681fefa31a56afc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/ShieldAttack.cs using Guid(7cab37967c946d64681fefa31a56afc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7e4e185f21f07d004974eea02992013') in 0.060777 seconds 
+Start importing Assets/ShieldAttack.cs using Guid(7cab37967c946d64681fefa31a56afc9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7e4e185f21f07d004974eea02992013') in 0.060777 seconds
 ========================================================================
-Received Import Request.
-  Time since last request: 0.000301 seconds.
-  path: Assets/PolearmAttack.cs
-  artifactKey: Guid(32bd82814b1bb6f4aa536e0e853e009f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PolearmAttack.cs using Guid(32bd82814b1bb6f4aa536e0e853e009f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77ce1ceefd6f1cf3666299822a8274ec') in 0.049685 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000306 seconds.
-  path: Assets/EnemyBehavior.cs
-  artifactKey: Guid(1013465c2878b9a44870eb7c4d2ab1fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/EnemyBehavior.cs using Guid(1013465c2878b9a44870eb7c4d2ab1fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ad79b9182013269300698ceef46501e') in 0.031244 seconds 
-========================================================================
-Received Prepare
-Refreshing native plugins compatible for Editor in 9.50 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 19 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 66.8 MB.
-System memory in use after: 67.0 MB.
-
-Unloading 19 unused Assets to reduce memory usage. Loaded Objects now: 4300.
-Total: 6.128500 ms (FindLiveObjects: 0.487900 ms CreateObjectMapping: 0.516500 ms MarkObjects: 5.071200 ms  DeleteObjects: 0.051300 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
