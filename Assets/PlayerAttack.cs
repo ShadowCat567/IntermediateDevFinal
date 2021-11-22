@@ -16,6 +16,7 @@ public class PlayerAttack : MonoBehaviour
     {
         if(Input.GetMouseButtonDown(0))
         {
+            //if left mouse botton is pressed, execute attack
             StartCoroutine(colliderActive());
         }
     }
@@ -28,6 +29,7 @@ public class PlayerAttack : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //if your weapon collides with an enemy, take health from the enemy
         if(collision.gameObject.tag == "Enemy")
         {
             collision.GetComponent<EnemyHealth>().enemyHealth -= 1;
@@ -36,6 +38,7 @@ public class PlayerAttack : MonoBehaviour
 
     IEnumerator colliderActive()
     {
+        //enable/disable weapon collider
         boxCollider.enabled = true;
         yield return new WaitForSeconds(0.8f);
         boxCollider.enabled = false;
