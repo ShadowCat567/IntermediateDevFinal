@@ -23,7 +23,7 @@ public class ShieldAttack : MonoBehaviour
     {
         if (collision.tag == "Enemy")
         {
-            Debug.Log("Hitting Enemy");
+            //if the shield is colliding with the enemy, the enemy is stunned
             hittingEnemy = true;
             collision.GetComponent<EnemyBehavior>().EnemyStunned();
         }
@@ -34,11 +34,13 @@ public class ShieldAttack : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
+            //when left mouse botton is pressed, the shield blocks
             StartCoroutine(Block());
         }
 
         if (Input.GetKeyDown(KeyCode.F))
         {
+            //finds a targetEnemy and moves to that targetEnemy, stunning it
             GameObject targetEnemy = EnemyInDetectDistance();
             if (targetEnemy)
             {
@@ -56,6 +58,7 @@ public class ShieldAttack : MonoBehaviour
 
     GameObject EnemyInDetectDistance()
     {
+        //Finds an enemy to target that is within 1.5f of the player, targetEnemy is the closest enemy
         GameObject targetEnemy = null;
         GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
         float closest = 1.5f;
@@ -75,6 +78,7 @@ public class ShieldAttack : MonoBehaviour
 
     IEnumerator Block()
     {
+        //activates the sheild's collider for 0.5 seconds to block incoming attacks
         boxCollider.enabled = true;
         boxCollider.isTrigger = false;
         sr.color = new Color(0.0f, 0.0f, 0.0f);
@@ -85,6 +89,7 @@ public class ShieldAttack : MonoBehaviour
 
     IEnumerator SheildBash()
     {
+        //activates the sheild's collider when it is excuting the shield bash
         boxCollider.enabled = true;
         boxCollider.isTrigger = true;
         yield return new WaitForSeconds(0.3f);
