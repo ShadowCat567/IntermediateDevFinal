@@ -19,6 +19,7 @@ public class JUMPZONE : MonoBehaviour
     {
 
     }
+    // The player bounce up by calling the jump function
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")

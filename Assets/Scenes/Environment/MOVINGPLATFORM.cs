@@ -17,7 +17,7 @@ public class MOVINGPLATFORM : MonoBehaviour
         
     }
 
-    // Update is called once per frame
+    // The platform is moving 
     void Update()
     {
         if (transform.position==pos1.position)
@@ -31,6 +31,13 @@ public class MOVINGPLATFORM : MonoBehaviour
         }
         transform.position = Vector3.MoveTowards(transform.position, NextPos, speed * Time.deltaTime);
 }
+
+
+
+
+
+
+    //if the player land on the moving platform the player stay with the platform
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.name =="player")
@@ -38,6 +45,8 @@ public class MOVINGPLATFORM : MonoBehaviour
             collision.gameObject.transform.SetParent(transform); 
         }
     }
+    
+    //if the player leave the platform they move freely
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.name == "player")
