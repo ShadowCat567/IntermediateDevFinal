@@ -5,12 +5,12 @@ using UnityEngine;
 public class movement : MonoBehaviour
 {
     // Start is called before the first frame update
-    public float Playerspeed;
-    public float Jumpforce;
+    public float Playerspeed;// speed of the player
+    public float Jumpforce;// player won't fly
 
     public Rigidbody2D rb;
-    private float originalspeed;
-    public float launchforce;
+    private float originalspeed;// Player's starting speed before speeding up
+    public float launchforce;//player jumps when landing on the bouncezone
 
     void Start()
     {
@@ -37,18 +37,19 @@ public class movement : MonoBehaviour
     public void JumpZone()
     {
 
-
+        // Player will bounce up when landing on the bouncezone
         rb.velocity = Vector2.up * launchforce;
 
 
     }
     public void Speedzone() {
 
-
+        //The player will speed up when coming across speedzone
         Playerspeed = Playerspeed * 3;
     }
     public void Originalspeed()
     {
+        //The player returns to the original speed after leaving the speedzone
         Playerspeed = originalspeed;
     }
 
