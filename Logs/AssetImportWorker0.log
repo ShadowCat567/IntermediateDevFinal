@@ -137,4 +137,7 @@ Received Import Request.
   path: Assets/Scenes/EnvironmentScene.unity
   artifactKey: Guid(d9dc5dc61e7c6084c951ff65164e110d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/Scenes/EnvironmentScene.unity using Guid(d9dc5dc61e7c6084c951ff65164e110d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90146f15b3f06e53b7326040f31d058b') in 0.022054 seconds 
+<<<<<<< Updated upstream
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+=======
+>>>>>>> Stashed changes
