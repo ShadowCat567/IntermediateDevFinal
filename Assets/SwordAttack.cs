@@ -16,6 +16,7 @@ public class SwordAttack : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            //when left mouse button is pressed, attack
             StartCoroutine(colliderActive());
         }
     }
@@ -35,12 +36,14 @@ public class SwordAttack : MonoBehaviour
     {
         if (collision.gameObject.tag == "Enemy")
         {
+            //if sword collides with an enemy, make the enemy take one damage
             collision.GetComponent<EnemyHealth>().enemyHealth -= 1;
         }
     }
 
     IEnumerator colliderActive()
     {
+        //activate the collider for 0.8 seconds to complete the attack
         boxCollider.enabled = true;
         yield return new WaitForSeconds(0.8f);
         boxCollider.enabled = false;
