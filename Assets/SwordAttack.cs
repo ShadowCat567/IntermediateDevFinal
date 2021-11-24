@@ -5,6 +5,7 @@ using UnityEngine;
 public class SwordAttack : MonoBehaviour
 {
     BoxCollider2D boxCollider;
+    bool waveAttack;
 
     private void Awake()
     {
@@ -29,6 +30,8 @@ public class SwordAttack : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
             //perform special ability
+            StartCoroutine(WaveSetActive());
+            WaveAttack();
         }
     }
 
@@ -41,11 +44,29 @@ public class SwordAttack : MonoBehaviour
         }
     }
 
+    void WaveAttack()
+    {
+        while(waveAttack)
+        {
+            if(Input.GetMouseButtonDown(0))
+            {
+                //execute wave attack
+            }
+        }
+    }
+
     IEnumerator colliderActive()
     {
         //activate the collider for 0.8 seconds to complete the attack
         boxCollider.enabled = true;
         yield return new WaitForSeconds(0.8f);
         boxCollider.enabled = false;
+    }
+
+    IEnumerator WaveSetActive()
+    {
+        waveAttack = true;
+        yield return new WaitForSeconds(5.0f);
+        waveAttack = false;
     }
 }
