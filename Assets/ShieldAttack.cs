@@ -10,6 +10,7 @@ public class ShieldAttack : MonoBehaviour
     public GameObject player;
     
     bool hittingEnemy;
+    bool canUseSpecial = true;
 
     private void Awake()
     {
@@ -38,7 +39,7 @@ public class ShieldAttack : MonoBehaviour
             StartCoroutine(Block());
         }
 
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F) && canUseSpecial)
         {
             //finds a targetEnemy and moves to that targetEnemy, stunning it
             GameObject targetEnemy = EnemyInDetectDistance();
@@ -49,6 +50,7 @@ public class ShieldAttack : MonoBehaviour
                 player.GetComponent<BasicPlayerMove>().SpecialAttack(targetEnemy);
             }
 
+            StartCoroutine(SpecialCooldown());
             //perform special ability
             //if enemy is within a certain range, dash to the enemy -- how to get the enemy that is in that range
             //dash distance = distance to enemy, this would probably more flexible...just need to get the detection down
@@ -74,6 +76,13 @@ public class ShieldAttack : MonoBehaviour
             }
         }
         return targetEnemy;
+    }
+
+    IEnumerator SpecialCooldown()
+    {
+        canUseSpecial = false;
+        yield return new WaitForSeconds(1.5f);
+        canUseSpecial = true;
     }
 
     IEnumerator Block()

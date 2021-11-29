@@ -22,6 +22,7 @@ public class PolearmAttack : MonoBehaviour
     float targetX;
     //next x position
     float nextX;
+    bool canUseSpecial = true;
 
     private void Awake()
     {
@@ -44,12 +45,13 @@ public class PolearmAttack : MonoBehaviour
     {
         Attack();
 
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F) && canUseSpecial)
         {
             if(spearThrown)
             {
                 //when F key is pressed and spearThrown is true, player moves to spear
                 StartCoroutine(SpearPosition());
+                StartCoroutine(SpecialCooldown());
             }
 
             else
@@ -81,6 +83,14 @@ public class PolearmAttack : MonoBehaviour
             collision.GetComponent<EnemyHealth>().enemyHealth -= 1;
         }
     }
+
+    IEnumerator SpecialCooldown()
+    {
+        canUseSpecial = false;
+        yield return new WaitForSeconds(4.0f);
+        canUseSpecial = true;
+    }
+
 
     IEnumerator SpearPosition()
     {
