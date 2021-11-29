@@ -15,6 +15,7 @@ public class SPEEDZONE : MonoBehaviour
     {
         
     }
+    // if the player comes across the platform the speed increase by calling the speedzone function
     void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
@@ -22,6 +23,7 @@ public class SPEEDZONE : MonoBehaviour
             collision.gameObject.GetComponent<movement>().Speedzone();
         }
     }
+    // if the player leave the platform the speed decrease to original speed
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")

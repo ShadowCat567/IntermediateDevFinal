@@ -1,6 +1,8 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
 
-
-/*public class enemySpawn : MonoBehaviour
+public class enemySpawn : MonoBehaviour
 {
     public GameObject enemy;
     float randomX;
@@ -8,13 +10,13 @@
     public float spawnRate = 2.0f;
     float nextSpawn = 0.0f;
     // Start is called before the first frame update
-   // void Start()
-    //{
+    void Start()
+    {
         
-    //}
+    }
 
     // Update is called once per frame
-  /*  void Update()
+    void Update()
     {
         if(Time.time > nextSpawn)
         {
@@ -24,5 +26,4 @@
             Instantiate(enemy, whereToSpawn, Quaternion.identity);
         }
     }
-    */
-
+}
