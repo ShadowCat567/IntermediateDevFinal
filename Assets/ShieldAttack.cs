@@ -46,8 +46,8 @@ public class ShieldAttack : MonoBehaviour
             if (targetEnemy)
             {
                 StartCoroutine(SheildBash());
-                player.GetComponent<BasicPlayerMove>().shieldDash = true;
-                player.GetComponent<BasicPlayerMove>().SpecialAttack(targetEnemy);
+                player.GetComponent<PlayerAttack>().shieldDash = true;
+                player.GetComponent<PlayerAttack>().SpecialAttack(targetEnemy);
             }
 
             StartCoroutine(SpecialCooldown());

@@ -95,8 +95,8 @@ public class PolearmAttack : MonoBehaviour
     IEnumerator SpearPosition()
     {
         //player moves to the spear's position
-        player.GetComponent<BasicPlayerMove>().spearMove = true;
-        player.GetComponent<BasicPlayerMove>().MoveToSpear();
+        player.GetComponent<PlayerAttack>().spearMove = true;
+        player.GetComponent<PlayerAttack>().MoveToSpear();
         yield return new WaitForSeconds(0.5f);
         spear.transform.SetParent(player.transform);
         spearThrown = false;
