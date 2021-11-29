@@ -61,6 +61,18 @@ public class BasicPlayerMove : MonoBehaviour
             //changes the weapon in the player's hand
             weaponChanger();
         }
+
+        Vector3 velocity = transform.position * rb.velocity;
+
+        if(velocity.x < 0)
+        {
+            //moving left
+        }
+
+        else if(velocity.x > 0)
+        {
+            //moving right
+        }
     }
 
     private void FixedUpdate()

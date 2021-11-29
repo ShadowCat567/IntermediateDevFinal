@@ -6,6 +6,9 @@ public class SwordAttack : MonoBehaviour
 {
     BoxCollider2D boxCollider;
 
+    bool waveAttack;
+    bool canUseSpecial = true;
+
     private void Awake()
     {
         boxCollider = GetComponent<BoxCollider2D>();
@@ -26,9 +29,12 @@ public class SwordAttack : MonoBehaviour
     {
         Attack();
 
-        if (Input.GetKeyDown(KeyCode.F))
+        if (Input.GetKeyDown(KeyCode.F) && canUseSpecial)
         {
             //perform special ability
+            StartCoroutine(WaveSetActive());
+            WaveAttack();
+            StartCoroutine(SpecialCooldown());
         }
     }
 
@@ -41,11 +47,36 @@ public class SwordAttack : MonoBehaviour
         }
     }
 
+    void WaveAttack()
+    {
+        while(waveAttack)
+        {
+            if(Input.GetMouseButtonDown(0))
+            {
+                //execute wave attack
+            }
+        }
+    }
+
+    IEnumerator SpecialCooldown()
+    {
+        canUseSpecial = false;
+        yield return new WaitForSeconds(1.5f);
+        canUseSpecial = true;
+    }
+
     IEnumerator colliderActive()
     {
         //activate the collider for 0.8 seconds to complete the attack
         boxCollider.enabled = true;
         yield return new WaitForSeconds(0.8f);
         boxCollider.enabled = false;
+    }
+
+    IEnumerator WaveSetActive()
+    {
+        waveAttack = true;
+        yield return new WaitForSeconds(5.0f);
+        waveAttack = false;
     }
 }
