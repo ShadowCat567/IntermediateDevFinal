@@ -56,29 +56,9 @@ public class PlayerAttack : MonoBehaviour
 
         Vector3 velocity = transform.position * rb.velocity;
 
-        if (velocity.x < 0)
+        if (Input.GetKey(KeyCode.A))
         {
             //moving left
-            //I know this looks weird, but apperantly I need to have the next weapon in the enum for it to work
-            if (weaponInHand == currentWeapon.spear)
-            {
-                swordObj.GetComponent<SwordAttack>().LeftFacing();
-            }
-
-            else if(weaponInHand == currentWeapon.shield)
-            {
-                spearObj.GetComponent<PolearmAttack>().FacingLeft();
-            }
-
-            else if(weaponInHand == currentWeapon.none)
-            {
-                sheildObj.GetComponent<ShieldAttack>().LeftFacing();
-            }
-        }
-
-        else if (velocity.x > 0)
-        {
-            //moving right
             //I know this looks weird, but apperantly I need to have the next weapon in the enum for it to work
             if (weaponInHand == currentWeapon.spear)
             {
@@ -93,6 +73,26 @@ public class PlayerAttack : MonoBehaviour
             else if (weaponInHand == currentWeapon.none)
             {
                 sheildObj.GetComponent<ShieldAttack>().RightFacing();
+            }
+        }
+
+        else if (Input.GetKey(KeyCode.D))
+        {
+            //moving right
+            //I know this looks weird, but apperantly I need to have the next weapon in the enum for it to work
+            if (weaponInHand == currentWeapon.spear)
+            {
+                swordObj.GetComponent<SwordAttack>().LeftFacing();
+            }
+
+            else if (weaponInHand == currentWeapon.shield)
+            {
+                spearObj.GetComponent<PolearmAttack>().FacingLeft();
+            }
+
+            else if (weaponInHand == currentWeapon.none)
+            {
+                sheildObj.GetComponent<ShieldAttack>().LeftFacing();
             }
         }
     }

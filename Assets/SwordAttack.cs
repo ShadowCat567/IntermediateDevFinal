@@ -10,7 +10,8 @@ public class SwordAttack : MonoBehaviour
     public GameObject player;
     public GameObject sword;
 
-    bool waveAttack;
+    [SerializeField] GameObject ProjectilePrefab;
+
     bool canUseSpecial = true;
 
     private void Awake()
@@ -36,7 +37,6 @@ public class SwordAttack : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F) && canUseSpecial)
         {
             //perform special ability
-            StartCoroutine(WaveSetActive());
             WaveAttack();
             StartCoroutine(SpecialCooldown());
         }
@@ -71,20 +71,36 @@ public class SwordAttack : MonoBehaviour
 
     void WaveAttack()
     {
-        while(waveAttack)
+        GameObject projectile;
+        projectile = Instantiate(ProjectilePrefab, transform.position, Quaternion.identity);
+        StartCoroutine(KillProjectile(0.7f, projectile));
+    }
+
+    void ProjectileDecideDirection(GameObject projectile)
+    {
+        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
         {
-            if(Input.GetMouseButtonDown(0))
-            {
-                //execute wave attack
-            }
+            projectile.GetComponent<WaveProjectile>().MovingLeft = false;
+        }
+
+        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            projectile.GetComponent<WaveProjectile>().MovingLeft = true;
+            Debug.Log("Moving left");
         }
     }
 
     IEnumerator SpecialCooldown()
     {
         canUseSpecial = false;
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1.0f);
         canUseSpecial = true;
+    }
+
+    IEnumerator KillProjectile(float lifetime, GameObject projectile)
+    {
+        yield return new WaitForSeconds(lifetime);
+        Destroy(projectile);
     }
 
     IEnumerator colliderActive()
@@ -93,12 +109,5 @@ public class SwordAttack : MonoBehaviour
         boxCollider.enabled = true;
         yield return new WaitForSeconds(0.8f);
         boxCollider.enabled = false;
-    }
-
-    IEnumerator WaveSetActive()
-    {
-        waveAttack = true;
-        yield return new WaitForSeconds(5.0f);
-        waveAttack = false;
     }
 }
