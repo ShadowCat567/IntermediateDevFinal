@@ -6,6 +6,10 @@ public class SwordAttack : MonoBehaviour
 {
     BoxCollider2D boxCollider;
 
+    public Transform playerTransform;
+    public GameObject player;
+    public GameObject sword;
+
     bool waveAttack;
     bool canUseSpecial = true;
 
@@ -35,6 +39,24 @@ public class SwordAttack : MonoBehaviour
             StartCoroutine(WaveSetActive());
             WaveAttack();
             StartCoroutine(SpecialCooldown());
+        }
+    }
+
+    public void LeftFacing()
+    {
+        if(!player.GetComponent<PlayerAttack>().facingLeft)
+        {
+            sword.transform.localPosition = new Vector3(0.6f, 0.1f, 0);
+            player.GetComponent<PlayerAttack>().facingLeft = true;
+        }
+    }
+
+    public void RightFacing()
+    {
+        if(player.GetComponent<PlayerAttack>().facingLeft)
+        {
+            sword.transform.localPosition = new Vector3(-0.6f, 0.1f, 0);
+            player.GetComponent<PlayerAttack>().facingLeft = false;
         }
     }
 

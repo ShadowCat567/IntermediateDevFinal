@@ -64,6 +64,25 @@ public class PolearmAttack : MonoBehaviour
         }
     }
 
+    public void FacingLeft()
+    {
+        if (!player.GetComponent<PlayerAttack>().facingLeft)
+        {
+            Debug.Log("Left facing");
+            spear.transform.localPosition = new Vector3(0.9f, 0, 0);
+            player.GetComponent<PlayerAttack>().facingLeft = true;
+        }
+    }
+
+    public void RightFacing()
+    {
+        if (player.GetComponent<PlayerAttack>().facingLeft)
+        {
+            spear.transform.localPosition = new Vector3(-0.9f, 0, 0);
+            player.GetComponent<PlayerAttack>().facingLeft = false;
+        }
+    }
+
     void ThrowSpear()
     {
         //throw the spear to the position movePos

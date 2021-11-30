@@ -154,6 +154,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f94883e94b6a54438dd62a9d744d19e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerTransform: {fileID: 1813968527}
+  player: {fileID: 1813968523}
+  sword: {fileID: 197617396}
 --- !u!61 &197617398
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -995,6 +998,7 @@ GameObject:
   - component: {fileID: 1813968528}
   - component: {fileID: 1813968525}
   - component: {fileID: 1813968524}
+  - component: {fileID: 1813968529}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1130,18 +1134,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df8c2a6ad03745e48a0c24f280712e09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1813968523}
   moveSpeed: 5
   moveX: 0
+--- !u!114 &1813968529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1813968523}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7a4b5e91dadecd4a86f905578cbeaab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1813968523}
+  facingLeft: 0
   swordObj: {fileID: 197617396}
   spearObj: {fileID: 314494719}
   sheildObj: {fileID: 2138997187}
   spearCore: {fileID: 255309311}
   shieldDash: 0
-  shieldDashSpeed: 100
+  shieldDashSpeed: 200
   spearMove: 0
-  spearMoveSpeed: 1000
-  weaponInHand: 0
+  spearMoveSpeed: 500
+  weaponInHand: 1
 --- !u!1 &2138997187
 GameObject:
   m_ObjectHideFlags: 0
@@ -1188,6 +1205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1813968523}
+  shield: {fileID: 2138997187}
 --- !u!61 &2138997190
 BoxCollider2D:
   m_ObjectHideFlags: 0

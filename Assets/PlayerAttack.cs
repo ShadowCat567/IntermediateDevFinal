@@ -7,6 +7,8 @@ public class PlayerAttack : MonoBehaviour
     Rigidbody2D rb;
     public GameObject player;
 
+    public bool facingLeft;
+
     Camera mainCamera;
 
     public GameObject swordObj;
@@ -57,11 +59,41 @@ public class PlayerAttack : MonoBehaviour
         if (velocity.x < 0)
         {
             //moving left
+            //I know this looks weird, but apperantly I need to have the next weapon in the enum for it to work
+            if (weaponInHand == currentWeapon.spear)
+            {
+                swordObj.GetComponent<SwordAttack>().LeftFacing();
+            }
+
+            else if(weaponInHand == currentWeapon.shield)
+            {
+                spearObj.GetComponent<PolearmAttack>().FacingLeft();
+            }
+
+            else if(weaponInHand == currentWeapon.none)
+            {
+                sheildObj.GetComponent<ShieldAttack>().LeftFacing();
+            }
         }
 
         else if (velocity.x > 0)
         {
             //moving right
+            //I know this looks weird, but apperantly I need to have the next weapon in the enum for it to work
+            if (weaponInHand == currentWeapon.spear)
+            {
+                swordObj.GetComponent<SwordAttack>().RightFacing();
+            }
+
+            else if (weaponInHand == currentWeapon.shield)
+            {
+                spearObj.GetComponent<PolearmAttack>().RightFacing();
+            }
+
+            else if (weaponInHand == currentWeapon.none)
+            {
+                sheildObj.GetComponent<ShieldAttack>().RightFacing();
+            }
         }
     }
 
