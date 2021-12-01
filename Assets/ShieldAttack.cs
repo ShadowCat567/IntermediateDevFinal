@@ -8,7 +8,8 @@ public class ShieldAttack : MonoBehaviour
     SpriteRenderer sr;
 
     public GameObject player;
-    
+    public GameObject shield;
+
     bool hittingEnemy;
     bool canUseSpecial = true;
 
@@ -46,8 +47,8 @@ public class ShieldAttack : MonoBehaviour
             if (targetEnemy)
             {
                 StartCoroutine(SheildBash());
-                player.GetComponent<BasicPlayerMove>().shieldDash = true;
-                player.GetComponent<BasicPlayerMove>().SpecialAttack(targetEnemy);
+                player.GetComponent<PlayerAttack>().shieldDash = true;
+                player.GetComponent<PlayerAttack>().SpecialAttack(targetEnemy);
             }
 
             StartCoroutine(SpecialCooldown());
@@ -55,6 +56,24 @@ public class ShieldAttack : MonoBehaviour
             //if enemy is within a certain range, dash to the enemy -- how to get the enemy that is in that range
             //dash distance = distance to enemy, this would probably more flexible...just need to get the detection down
             //really short range dash, shield becomes solid and temporarily stuns emeny (stun means enemy cannot attack or move)
+        }
+    }
+
+    public void LeftFacing()
+    {
+        if (!player.GetComponent<PlayerAttack>().facingLeft)
+        {
+            shield.transform.localPosition = new Vector3(0.6f, 0.07f, 0);
+            player.GetComponent<PlayerAttack>().facingLeft = true;
+        }
+    }
+
+    public void RightFacing()
+    {
+        if (player.GetComponent<PlayerAttack>().facingLeft)
+        {
+            shield.transform.localPosition = new Vector3(-0.6f, 0.07f, 0);
+            player.GetComponent<PlayerAttack>().facingLeft = false;
         }
     }
 
