@@ -68,7 +68,6 @@ public class PolearmAttack : MonoBehaviour
     {
         if (!player.GetComponent<PlayerAttack>().facingLeft)
         {
-            Debug.Log("Left facing");
             spear.transform.localPosition = new Vector3(0.9f, 0, 0);
             player.GetComponent<PlayerAttack>().facingLeft = true;
         }
@@ -87,7 +86,17 @@ public class PolearmAttack : MonoBehaviour
     {
         //throw the spear to the position movePos
         playerX = player.transform.position.x;
-        targetX = transform.position.x + throwDistance;
+
+        if (!player.GetComponent<PlayerAttack>().facingLeft)
+        {
+            targetX = transform.position.x - throwDistance;
+        }
+
+        else
+        {
+            targetX = transform.position.x + throwDistance;
+        }
+
         nextX = Mathf.MoveTowards(transform.position.x, targetX, speed * Time.deltaTime);
 
         movePos = new Vector3(nextX, transform.position.y, transform.position.z);
@@ -106,17 +115,16 @@ public class PolearmAttack : MonoBehaviour
     IEnumerator SpecialCooldown()
     {
         canUseSpecial = false;
-        yield return new WaitForSeconds(4.0f);
+        yield return new WaitForSeconds(0.0f);
         canUseSpecial = true;
     }
-
 
     IEnumerator SpearPosition()
     {
         //player moves to the spear's position
         player.GetComponent<PlayerAttack>().spearMove = true;
         player.GetComponent<PlayerAttack>().MoveToSpear();
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.01f);
         spear.transform.SetParent(player.transform);
         spearThrown = false;
     }
