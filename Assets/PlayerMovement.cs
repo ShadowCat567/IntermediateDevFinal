@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     //How powerful the jump is. The value I used for testing is 35. 
     [SerializeField] float jumpVelocity;
 
-    private float xSpeed = 0;
+    public float xSpeed = 0;
 
     //If Unity yells at you about this variable don't worry about it; I haven't implemented a use for it just yet. 
     private float ySpeed = 0;

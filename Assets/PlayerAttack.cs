@@ -56,7 +56,7 @@ public class PlayerAttack : MonoBehaviour
 
         Vector3 velocity = transform.position * rb.velocity;
 
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             //moving left
             //I know this looks weird, but apperantly I need to have the next weapon in the enum for it to work
@@ -76,7 +76,7 @@ public class PlayerAttack : MonoBehaviour
             }
         }
 
-        else if (Input.GetKey(KeyCode.D))
+        else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             //moving right
             //I know this looks weird, but apperantly I need to have the next weapon in the enum for it to work
