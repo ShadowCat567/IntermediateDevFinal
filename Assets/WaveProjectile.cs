@@ -5,7 +5,7 @@ using UnityEngine;
 public class WaveProjectile : MonoBehaviour
 {
     Rigidbody2D rb;
-    [SerializeField] float speed = 2.0f; 
+    [SerializeField] float speed = 1.5f; 
 
     Vector2 direction;
     float playerSpeed;
@@ -16,6 +16,14 @@ public class WaveProjectile : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         direction = GameObject.Find("Sword").transform.localPosition;
         playerSpeed = GameObject.Find("player").GetComponent<PlayerMovement>().xSpeed; 
+    }
+
+    private void Start()
+    {
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+        {
+            playerSpeed = (playerSpeed) * -1;
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
