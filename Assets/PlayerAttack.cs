@@ -54,7 +54,7 @@ public class PlayerAttack : MonoBehaviour
             weaponChanger();
         }
 
-        Vector3 velocity = transform.position * rb.velocity;
+      //  Vector3 velocity = transform.position * rb.velocity;
 
         if (Input.GetKey(KeyCode.A))
         {
