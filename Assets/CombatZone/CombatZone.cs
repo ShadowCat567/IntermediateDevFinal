@@ -6,8 +6,9 @@ public class CombatZone : MonoBehaviour
 {
     BoxCollider2D boxCollider;
     SpriteRenderer sr;
-    bool combatZoneStart = false;
-    bool completedCombat = false;
+    public bool combatZoneStart = false;
+    public bool completedCombat = false;
+    public bool combatZoneEntered = false;
 
     Camera mainCamera;
     public GameObject LockObject;
@@ -36,13 +37,14 @@ public class CombatZone : MonoBehaviour
     {
         if(combatZoneStart)
         {
+            combatZoneEntered = true;
             boxCollider.isTrigger = false;
             exitWall.GetComponent<BoxCollider2D>().isTrigger = false;
             exitWall.GetComponent<SpriteRenderer>().color = Color.white;
             sr.color = Color.white;
             mainCamera.transform.position = LockObject.transform.position;
             mainCamera.GetComponent<BasicCameraFollowIgnore>().enabled = false;
-            StartCoroutine(CombatZoneEnd());
+           // StartCoroutine(CombatZoneEnd());
         }
 
         else if(!combatZoneStart)
@@ -55,10 +57,12 @@ public class CombatZone : MonoBehaviour
         }
     }
 
+    /*
     IEnumerator CombatZoneEnd()
     {
         yield return new WaitForSeconds(3.0f);
         completedCombat = true;
         combatZoneStart = false;
     }
+    */
 }

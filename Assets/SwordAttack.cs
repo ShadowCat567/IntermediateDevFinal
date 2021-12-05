@@ -86,7 +86,7 @@ public class SwordAttack : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
         {
             projectile.GetComponent<WaveProjectile>().MovingLeft = true;
-            Debug.Log("Moving left");
+          //  Debug.Log("Moving left");
         }
     }
 
