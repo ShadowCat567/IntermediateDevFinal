@@ -6,7 +6,7 @@ public class JUMPZONE : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    float jumpForce = 60;
+    public float jumpForce = 60;
 
     void Start()
     {
