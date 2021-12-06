@@ -7,10 +7,22 @@ public class EnemyBehavior : MonoBehaviour
     SpriteRenderer sr;
     bool enemyStunned = false;
 
+    [SerializeField] GameObject enemy;
+    [SerializeField] GameObject spawner;
+
     private void Awake()
     {
         sr = GetComponent<SpriteRenderer>();
         sr.color = Color.white;
+    }
+
+    private void Update()
+    {
+        if (enemy.GetComponent<EnemyHealth>().enemyHealth == 0)
+        {
+           // spawner.GetComponent<EnemyWaveSpawning>().enemyList.Remove(enemy);
+            Destroy(enemy);
+        }
     }
 
     public void EnemyStunned()

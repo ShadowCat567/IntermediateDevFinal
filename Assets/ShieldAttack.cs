@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ShieldAttack : MonoBehaviour
 {
@@ -12,6 +13,9 @@ public class ShieldAttack : MonoBehaviour
 
     bool hittingEnemy;
     bool canUseSpecial = true;
+    public TMP_Text sheildCooldownTxt;
+    public float cooldownShield = 1.5f;
+    public float shieldCounter;
 
     private void Awake()
     {
@@ -23,7 +27,7 @@ public class ShieldAttack : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "Enemy")
+        if (collision.tag == "Enemy" && player.GetComponent<PlayerAttack>().shieldActive)
         {
             //if the shield is colliding with the enemy, the enemy is stunned
             hittingEnemy = true;
@@ -34,13 +38,13 @@ public class ShieldAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButton(0))
+        if (Input.GetMouseButton(0) && player.GetComponent<PlayerAttack>().shieldActive)
         {
             //when left mouse botton is pressed, the shield blocks
             StartCoroutine(Block());
         }
 
-        if (Input.GetKeyDown(KeyCode.F) && canUseSpecial)
+        if (Input.GetKeyDown(KeyCode.F) && canUseSpecial && player.GetComponent<PlayerAttack>().shieldActive)
         {
             //finds a targetEnemy and moves to that targetEnemy, stunning it
             GameObject targetEnemy = EnemyInDetectDistance();
@@ -51,7 +55,12 @@ public class ShieldAttack : MonoBehaviour
                 player.GetComponent<PlayerAttack>().SpecialAttack(targetEnemy);
             }
 
-            StartCoroutine(SpecialCooldown());
+            if (shieldCounter == cooldownShield)
+            {
+                canUseSpecial = true;
+            }
+
+            StartCoroutine(SpecialCooldown(cooldownShield, shieldCounter));
             //perform special ability
             //if enemy is within a certain range, dash to the enemy -- how to get the enemy that is in that range
             //dash distance = distance to enemy, this would probably more flexible...just need to get the detection down
@@ -97,11 +106,20 @@ public class ShieldAttack : MonoBehaviour
         return targetEnemy;
     }
 
-    IEnumerator SpecialCooldown()
+    IEnumerator SpecialCooldown(float cooldown, float counter)
     {
+        counter = 0;
         canUseSpecial = false;
+        while (counter < cooldown)
+        {
+            sheildCooldownTxt.text = "Shield Cooldown: " + counter;
+            yield return new WaitForSeconds(0.5f);
+            counter += 0.5f;
+        }
+
         yield return new WaitForSeconds(1.5f);
         canUseSpecial = true;
+        sheildCooldownTxt.text = "Shield Cooldown: READY";
     }
 
     IEnumerator Block()
