@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class CombatZone : MonoBehaviour
 {
@@ -10,13 +11,12 @@ public class CombatZone : MonoBehaviour
     public bool completedCombat = false;
     public bool combatZoneEntered = false;
 
-    Camera mainCamera;
-    public GameObject LockObject;
+    [SerializeField] TMP_Text EnemyCombatTxt;
+    [SerializeField] GameObject EnemyWaveSpawner;
     public GameObject exitWall;
 
     private void Awake()
     {
-        mainCamera = Camera.main;
         boxCollider = GetComponent<BoxCollider2D>();
         exitWall.GetComponent<BoxCollider2D>().isTrigger = true;
         exitWall.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0.5f);
@@ -42,9 +42,8 @@ public class CombatZone : MonoBehaviour
             exitWall.GetComponent<BoxCollider2D>().isTrigger = false;
             exitWall.GetComponent<SpriteRenderer>().color = Color.white;
             sr.color = Color.white;
-            mainCamera.transform.position = LockObject.transform.position;
-            mainCamera.GetComponent<BasicCameraFollowIgnore>().enabled = false;
-           // StartCoroutine(CombatZoneEnd());
+            //each combat zone needs its own text
+            EnemyCombatTxt.text = "Enemies Remaining: " + EnemyWaveSpawner.GetComponent<EnemyWaveSpawning>().enemyList.Count;
         }
 
         else if(!combatZoneStart)
@@ -53,16 +52,7 @@ public class CombatZone : MonoBehaviour
             exitWall.GetComponent<BoxCollider2D>().isTrigger = true;
             sr.color = new Color(1, 1, 1, 0.5f);
             exitWall.GetComponent<SpriteRenderer>().color = new Color(1, 1, 1, 0.5f);
-            mainCamera.GetComponent<BasicCameraFollowIgnore>().enabled = true;
+            EnemyCombatTxt.text = "";
         }
     }
-
-    /*
-    IEnumerator CombatZoneEnd()
-    {
-        yield return new WaitForSeconds(3.0f);
-        completedCombat = true;
-        combatZoneStart = false;
-    }
-    */
 }
