@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerAttack : MonoBehaviour
 {
@@ -29,6 +30,10 @@ public class PlayerAttack : MonoBehaviour
     public bool spearMove;
     public float spearMoveSpeed = 500.0f;
 
+    public bool swordActive;
+    public bool spearActive;
+    public bool shieldActive;
+
     //enum for current weapon in hand
     public enum currentWeapon
     {
@@ -54,7 +59,7 @@ public class PlayerAttack : MonoBehaviour
             weaponChanger();
         }
 
-        Vector3 velocity = transform.position * rb.velocity;
+      //  Vector3 velocity = transform.position * rb.velocity;
 
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
@@ -190,30 +195,54 @@ public class PlayerAttack : MonoBehaviour
         switch (weaponInHand)
         {
             case currentWeapon.none:
-                swordObj.SetActive(false);
-                spearObj.SetActive(false);
-                sheildObj.SetActive(false);
+                swordActive = false;
+                spearActive = false;
+                shieldActive = false;
+                swordObj.GetComponent<BoxCollider2D>().enabled = false;
+                swordObj.GetComponent<SpriteRenderer>().enabled = false;
+                spearObj.GetComponent<BoxCollider2D>().enabled = false;
+                spearObj.GetComponent<SpriteRenderer>().enabled = false;
+                sheildObj.GetComponent<BoxCollider2D>().enabled = false;
+                sheildObj.GetComponent<SpriteRenderer>().enabled = false;
                 weaponInHand = currentWeapon.sword;
                 break;
 
             case currentWeapon.sword:
-                swordObj.SetActive(true);
-                spearObj.SetActive(false);
-                sheildObj.SetActive(false);
+                swordActive = true;
+                spearActive = false;
+                shieldActive = false;
+                swordObj.GetComponent<BoxCollider2D>().enabled = true;
+                swordObj.GetComponent<SpriteRenderer>().enabled = true;
+                spearObj.GetComponent<BoxCollider2D>().enabled = false;
+                spearObj.GetComponent<SpriteRenderer>().enabled = false;
+                sheildObj.GetComponent<BoxCollider2D>().enabled = false;
+                sheildObj.GetComponent<SpriteRenderer>().enabled = false;
                 weaponInHand = currentWeapon.spear;
                 break;
 
             case currentWeapon.spear:
-                swordObj.SetActive(false);
-                spearObj.SetActive(true);
-                sheildObj.SetActive(false);
+                swordActive = false;
+                spearActive = true;
+                shieldActive = false;
+                swordObj.GetComponent<BoxCollider2D>().enabled = false;
+                swordObj.GetComponent<SpriteRenderer>().enabled = false;
+                spearObj.GetComponent<BoxCollider2D>().enabled = true;
+                spearObj.GetComponent<SpriteRenderer>().enabled = true;
+                sheildObj.GetComponent<BoxCollider2D>().enabled = false;
+                sheildObj.GetComponent<SpriteRenderer>().enabled = false;
                 weaponInHand = currentWeapon.shield;
                 break;
 
             case currentWeapon.shield:
-                swordObj.SetActive(false);
-                spearObj.SetActive(false);
-                sheildObj.SetActive(true);
+                swordActive = false;
+                spearActive = false;
+                shieldActive = true;
+                swordObj.GetComponent<BoxCollider2D>().enabled = false;
+                swordObj.GetComponent<SpriteRenderer>().enabled = false;
+                spearObj.GetComponent<BoxCollider2D>().enabled = false;
+                spearObj.GetComponent<SpriteRenderer>().enabled = false;
+                sheildObj.GetComponent<BoxCollider2D>().enabled = true;
+                sheildObj.GetComponent<SpriteRenderer>().enabled = true;
                 weaponInHand = currentWeapon.none;
                 break;
         }
