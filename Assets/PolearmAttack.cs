@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PolearmAttack : MonoBehaviour
 {
@@ -24,6 +25,10 @@ public class PolearmAttack : MonoBehaviour
     float nextX;
     bool canUseSpecial = true;
 
+    public float cooldownSpear = 4.0f;
+    public float spearCounter;
+    public TMP_Text spearCooldownTxt;
+
     private void Awake()
     {
         boxCollider = GetComponent<BoxCollider2D>();
@@ -32,10 +37,9 @@ public class PolearmAttack : MonoBehaviour
 
     void Attack()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && player.GetComponent<PlayerAttack>().spearActive)
         {
             //when left mouse button is pressed, attack
-
             StartCoroutine(colliderActive());
         }
     }
@@ -45,13 +49,19 @@ public class PolearmAttack : MonoBehaviour
     {
         Attack();
 
-        if (Input.GetKeyDown(KeyCode.F) && canUseSpecial)
+        if (Input.GetKeyDown(KeyCode.F) && canUseSpecial && player.GetComponent<PlayerAttack>().spearActive)
         {
             if(spearThrown)
             {
                 //when F key is pressed and spearThrown is true, player moves to spear
                 StartCoroutine(SpearPosition());
-                StartCoroutine(SpecialCooldown());
+
+                if(spearCounter == cooldownSpear)
+                {
+                    canUseSpecial = true;
+                }
+
+                StartCoroutine(SpecialCooldown(cooldownSpear, spearCounter));
             }
 
             else
@@ -105,18 +115,27 @@ public class PolearmAttack : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Enemy")
+        if (collision.gameObject.tag == "Enemy" && player.GetComponent<PlayerAttack>().spearActive)
         {
             //if the spear/polearm collides with an enemy, make the enemy take 1 damage
             collision.GetComponent<EnemyHealth>().enemyHealth -= 1;
         }
     }
 
-    IEnumerator SpecialCooldown()
+    IEnumerator SpecialCooldown(float cooldown, float counter)
     {
+        counter = 0;
         canUseSpecial = false;
-        yield return new WaitForSeconds(4.0f);
+        while (counter < cooldown)
+        {
+            spearCooldownTxt.text = "Spear Cooldown: " + counter;
+            yield return new WaitForSeconds(1.0f);
+            counter++;
+        }
+
+        yield return new WaitForSeconds(cooldown);
         canUseSpecial = true;
+        spearCooldownTxt.text = "Spear Cooldown: READY";
     }
 
     IEnumerator SpearPosition()
