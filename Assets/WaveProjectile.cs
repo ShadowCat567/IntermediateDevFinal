@@ -15,7 +15,7 @@ public class WaveProjectile : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         direction = GameObject.Find("Sword").transform.localPosition;
-        playerSpeed = GameObject.Find("player").GetComponent<PlayerMovement>().xSpeed; 
+        playerSpeed = GameObject.Find("Player").GetComponent<PlayerMovement>().xSpeed; 
     }
 
     private void Start()
