@@ -7,7 +7,7 @@ public class ButtonBehaviors : MonoBehaviour
 {
     public void ExitGame()
     {
-        Debug.Log("You have exited");
+       // Debug.Log("You have exited");
         Application.Quit();
     }
 
@@ -15,5 +15,12 @@ public class ButtonBehaviors : MonoBehaviour
     {
         //start the game
         Debug.Log("Go to game start screen");
+    }
+
+    public void MainMenu()
+    {
+        //go to the title screen
+       // Debug.Log("go to title screen");
+        SceneManager.LoadScene("TitleScreen");
     }
 }
