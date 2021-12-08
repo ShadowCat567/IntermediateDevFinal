@@ -21,9 +21,9 @@ public class EnemyPatrol : MonoBehaviour
     public LayerMask whatIsWall;
     private bool hittingWall;
 
-    private bool notAtEdge;
+/*    private bool notAtEdge;
     public Transform edgeCheck;
-
+*/
     // Start is called before the first frame update
     void Start()
     {
@@ -36,9 +36,9 @@ public class EnemyPatrol : MonoBehaviour
         //in update
 
         hittingWall = Physics2D.OverlapCircle(wallCheck.position, wallCheckRadius, whatIsWall);
-        notAtEdge = Physics2D.OverlapCircle(edgeCheck.position, wallCheckRadius, whatIsWall);
+//        notAtEdge = Physics2D.OverlapCircle(edgeCheck.position, wallCheckRadius, whatIsWall);
 
-        if (hittingWall || !notAtEdge)
+        if (hittingWall)
             moveRight = !moveRight;
 
         //adds basic enemy movement
