@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+<<<<<<< Updated upstream
 public class EnemyPatrol : MonoBehaviour
 {
     //wandering
@@ -10,6 +11,18 @@ public class EnemyPatrol : MonoBehaviour
 
     //create enemy empty child, wallcheck, drag wallcheck into enemy patrol script and set radius
     //create edge check empty child as well
+=======
+//  enemy
+//wandering
+//make sure enemy has rigidbody, collider, and trigger collider for damaging player
+//enemy patrol script
+
+//create enemy empty child, wallcheck, drag wallcheck into enemy patrol script and set radius
+//create edge check empty child as well
+
+public class EnemyPatrol : MonoBehaviour
+{
+>>>>>>> Stashed changes
 
     public float moveSpeed;
     public bool moveRight; //whether he is moving left or right
@@ -32,6 +45,10 @@ public class EnemyPatrol : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
         //in update
 
         hittingWall = Physics2D.OverlapCircle(wallCheck.position, wallCheckRadius, whatIsWall);
@@ -53,5 +70,10 @@ public class EnemyPatrol : MonoBehaviour
         }
 
         //makes enemy turn around when hitting a wall
+<<<<<<< Updated upstream
+=======
+
+
+>>>>>>> Stashed changes
     }
 }
