@@ -70,7 +70,7 @@ public class SwordAttack : MonoBehaviour
         if (collision.gameObject.tag == "Enemy" && player.GetComponent<PlayerAttack>().swordActive)
         {
             //if sword collides with an enemy, make the enemy take one damage
-            collision.GetComponent<EnemyHealth>().enemyHealth -= 1;
+            collision.GetComponent<EnemyHealth>().enemyHealth -= 0.1f;
         }
     }
 
