@@ -30,7 +30,7 @@ public class WaveProjectile : MonoBehaviour
     {
         if(collision.gameObject.tag == "Enemy")
         {
-            collision.GetComponent<EnemyHealth>().enemyHealth -= 2;
+            collision.GetComponent<EnemyHealth>().enemyHealth -= 0.2f;
         }
     }
 

@@ -18,7 +18,7 @@ public class EnemyBehavior : MonoBehaviour
 
     private void Update()
     {
-        if (enemy.GetComponent<EnemyHealth>().enemyHealth <= 0)
+        if (enemy.GetComponent<EnemyHealth>().enemyHealth <= 0.0f)
         {
            // spawner.GetComponent<EnemyWaveSpawning>().enemyList.Remove(enemy);
             Destroy(enemy);

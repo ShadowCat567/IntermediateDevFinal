@@ -131,7 +131,7 @@ public class PlayerAttack : MonoBehaviour
                     distance = enemyDistance;
                     dashing = true;
                     ExecuteDash(distance, ray.collider);
-                    ray.collider.GetComponent<EnemyHealth>().enemyHealth -= 1;
+                    ray.collider.GetComponent<EnemyHealth>().enemyHealth -= 0.1f;
                 }
             }
         }
