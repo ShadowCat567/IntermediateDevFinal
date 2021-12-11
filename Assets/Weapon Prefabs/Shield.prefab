@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3864115596412462602}
   - component: {fileID: 3864115596412462601}
   - component: {fileID: 3864115596412462600}
-  - component: {fileID: 3864115596412462603}
+  - component: {fileID: 1261307017428492764}
   m_Layer: 0
   m_Name: Shield
   m_TagString: Untagged
@@ -111,7 +111,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &3864115596412462603
+--- !u!114 &1261307017428492764
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -124,4 +124,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  shield: {fileID: 3864115596412462605}
+  shield: {fileID: 0}
+  sheildCooldownTxt: {fileID: 0}
+  cooldownShield: 1.5
+  shieldCounter: 0

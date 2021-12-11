@@ -6,7 +6,10 @@ using TMPro;
 public class ShieldAttack : MonoBehaviour
 {
     BoxCollider2D boxCollider;
+
     SpriteRenderer sr;
+    [SerializeField] Sprite rightSprite;
+    [SerializeField] Sprite leftSprite;
 
     public GameObject player;
     public GameObject shield;
@@ -72,7 +75,8 @@ public class ShieldAttack : MonoBehaviour
     {
         if (!player.GetComponent<PlayerAttack>().facingLeft)
         {
-            shield.transform.localPosition = new Vector3(0.6f, 0.07f, 0);
+            shield.transform.localPosition = new Vector3(0.7f, 0.035f, 0);
+            sr.sprite = rightSprite;
             player.GetComponent<PlayerAttack>().facingLeft = true;
         }
     }
@@ -81,7 +85,8 @@ public class ShieldAttack : MonoBehaviour
     {
         if (player.GetComponent<PlayerAttack>().facingLeft)
         {
-            shield.transform.localPosition = new Vector3(-0.6f, 0.07f, 0);
+            shield.transform.localPosition = new Vector3(-0.83f, 0.1f, 0);
+            sr.sprite = leftSprite;
             player.GetComponent<PlayerAttack>().facingLeft = false;
         }
     }

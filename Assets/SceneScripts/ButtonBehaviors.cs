@@ -14,7 +14,7 @@ public class ButtonBehaviors : MonoBehaviour
     public void StartGame()
     {
         //start the game
-        Debug.Log("Go to game start screen");
+        SceneManager.LoadScene("EnvironmentScene");
     }
 
     public void MainMenu()
