@@ -12,7 +12,7 @@ public class PolearmAttack : MonoBehaviour
 
     SpriteRenderer sr;
     [SerializeField] Sprite leftSprite;
-    [SerializeField] Sprite rightsprite;
+    [SerializeField] Sprite rightSprite;
 
     float speed = 1000.0f;
 
@@ -84,6 +84,7 @@ public class PolearmAttack : MonoBehaviour
         if (!player.GetComponent<PlayerAttack>().facingLeft)
         {
             spear.transform.localPosition = new Vector3(0.9f, 0, 0);
+            sr.sprite = rightSprite;
             player.GetComponent<PlayerAttack>().facingLeft = true;
         }
     }
@@ -93,7 +94,7 @@ public class PolearmAttack : MonoBehaviour
         if (player.GetComponent<PlayerAttack>().facingLeft)
         {
             spear.transform.localPosition = new Vector3(-0.9f, 0, 0);
-            sr.sprite = rightsprite;
+            sr.sprite = leftSprite;
             player.GetComponent<PlayerAttack>().facingLeft = false;
         }
     }

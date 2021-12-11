@@ -2077,6 +2077,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 7d46593c00628b145a0012f531fd7f21, type: 3}
     - target: {fileID: 6160999987779692969, guid: d4c633055ecedb242a3c527b2afe6174, type: 3}
+      propertyPath: rightSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2c2dac9b4cb909e4d806e2306d910571, type: 3}
+    - target: {fileID: 6160999987779692969, guid: d4c633055ecedb242a3c527b2afe6174, type: 3}
       propertyPath: rightsprite
       value: 
       objectReference: {fileID: 21300000, guid: 2c2dac9b4cb909e4d806e2306d910571, type: 3}
