@@ -11,6 +11,10 @@ public class SwordAttack : MonoBehaviour
     public GameObject player;
     public GameObject sword;
 
+    SpriteRenderer sr;
+    [SerializeField] Sprite rightSprite;
+    [SerializeField] Sprite leftSprite;
+
     public float cooldownTimerSword = 1.0f;
     public float swordCounter;
     public TMP_Text swordCooldownTxt;
@@ -21,6 +25,7 @@ public class SwordAttack : MonoBehaviour
 
     private void Awake()
     {
+        sr = GetComponent<SpriteRenderer>();
         boxCollider = GetComponent<BoxCollider2D>();
         boxCollider.enabled = false;
     }
@@ -51,7 +56,8 @@ public class SwordAttack : MonoBehaviour
     {
         if(!player.GetComponent<PlayerAttack>().facingLeft)
         {
-            sword.transform.localPosition = new Vector3(0.6f, 0.1f, 0);
+            sword.transform.localPosition = new Vector3(0.91f, -0.29f, 0);
+            sr.sprite = rightSprite;
             player.GetComponent<PlayerAttack>().facingLeft = true;
         }
     }
@@ -60,7 +66,8 @@ public class SwordAttack : MonoBehaviour
     {
         if(player.GetComponent<PlayerAttack>().facingLeft)
         {
-            sword.transform.localPosition = new Vector3(-0.6f, 0.1f, 0);
+            sword.transform.localPosition = new Vector3(-0.91f, -0.29f, 0);
+            sr.sprite = leftSprite;
             player.GetComponent<PlayerAttack>().facingLeft = false;
         }
     }
