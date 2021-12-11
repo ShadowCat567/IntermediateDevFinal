@@ -34,14 +34,15 @@ public class movement : MonoBehaviour
     }
    
     
-    public void JumpZone()
+   /* public void JumpZone()
     {
 
         // Player will bounce up when landing on the bouncezone
         rb.velocity = Vector2.up * launchforce;
 
 
-    }
+    }*/
+
     public void Speedzone() {
 
         //The player will speed up when coming across speedzone

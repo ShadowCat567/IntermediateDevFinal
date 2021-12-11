@@ -38,7 +38,7 @@ public class MOVINGPLATFORM : MonoBehaviour
 
 
     //if the player land on the moving platform the player stay with the platform
-    private void OnCollisionEnter2D(Collision2D collision)
+    /*private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.name =="player")
         {
@@ -53,5 +53,5 @@ public class MOVINGPLATFORM : MonoBehaviour
         {
             collision.gameObject.transform.SetParent(null);
         }
-    }
+    }*/
 }
