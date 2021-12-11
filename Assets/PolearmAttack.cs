@@ -118,7 +118,7 @@ public class PolearmAttack : MonoBehaviour
         if (collision.gameObject.tag == "Enemy" && player.GetComponent<PlayerAttack>().spearActive)
         {
             //if the spear/polearm collides with an enemy, make the enemy take 1 damage
-            collision.GetComponent<EnemyHealth>().enemyHealth -= 1;
+            collision.GetComponent<EnemyHealth>().enemyHealth -= 0.1f;
         }
     }
 
