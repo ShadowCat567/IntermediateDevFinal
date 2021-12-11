@@ -10,6 +10,10 @@ public class PolearmAttack : MonoBehaviour
     public GameObject spear;
     public GameObject spearCore;
 
+    SpriteRenderer sr;
+    [SerializeField] Sprite leftSprite;
+    [SerializeField] Sprite rightsprite;
+
     float speed = 1000.0f;
 
     //spear movement related variables
@@ -31,6 +35,7 @@ public class PolearmAttack : MonoBehaviour
 
     private void Awake()
     {
+        sr = GetComponent<SpriteRenderer>();
         boxCollider = GetComponent<BoxCollider2D>();
         boxCollider.enabled = false;
     }
@@ -88,6 +93,7 @@ public class PolearmAttack : MonoBehaviour
         if (player.GetComponent<PlayerAttack>().facingLeft)
         {
             spear.transform.localPosition = new Vector3(-0.9f, 0, 0);
+            sr.sprite = rightsprite;
             player.GetComponent<PlayerAttack>().facingLeft = false;
         }
     }
