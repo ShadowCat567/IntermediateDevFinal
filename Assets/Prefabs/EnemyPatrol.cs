@@ -21,7 +21,7 @@ public class EnemyPatrol : MonoBehaviour
         
     }
 
-    void OnCollisionEnter2D(collisiion2D, collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Wall")
         {
@@ -29,11 +29,11 @@ public class EnemyPatrol : MonoBehaviour
         }
     }
 
-        // Update is called once per frame
-        void Update()
-        {
+    // Update is called once per frame
+    void Update()
+    {
 
-            //adds basic enemy movement
+         //adds basic enemy movement
             if (moveRight)
             {
                 transform.localScale = new Vector3(-1f, 1f, 0f); //flips the enemy and wallcheck 
