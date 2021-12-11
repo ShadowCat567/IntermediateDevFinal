@@ -6,8 +6,7 @@ public class JUMPZONE : MonoBehaviour
 {
     // Start is called before the first frame update
 
-    
-
+    public float jumpForce = 60;
 
     void Start()
     {
@@ -24,8 +23,8 @@ public class JUMPZONE : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            collision.gameObject.GetComponent<movement>().JumpZone();
-
+            Rigidbody2D rb2d = collision.gameObject.GetComponent<Rigidbody2D>();
+            rb2d.velocity += Vector2.up * jumpForce; 
 
         }
     }
