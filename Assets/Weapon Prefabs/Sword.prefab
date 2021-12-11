@@ -74,7 +74,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 86eda5640414d794aac1a963b33bda5e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8c83e9272719deb4f9241c70172b7292, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -100,9 +100,9 @@ BoxCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.07787681, y: 0}
   m_SpriteTilingProperty:
-    border: {x: 0.35999998, y: 0.16, z: 0.24, w: 0.24}
+    border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.26, y: 1.78}
+    oldSize: {x: 0.78, y: 0.33}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -126,8 +126,8 @@ MonoBehaviour:
   playerTransform: {fileID: 0}
   player: {fileID: 0}
   sword: {fileID: 9081029527046206123}
-  rightSprite: {fileID: 21300000, guid: 86eda5640414d794aac1a963b33bda5e, type: 3}
-  leftSprite: {fileID: 21300000, guid: d87f5566dd63b6343a3a7b6f5a6e104c, type: 3}
+  rightSprite: {fileID: 21300000, guid: 8c83e9272719deb4f9241c70172b7292, type: 3}
+  leftSprite: {fileID: 21300000, guid: bd36760e03c03aa40a3a6b71d45f91c7, type: 3}
   cooldownTimerSword: 1
   swordCounter: 0
   swordCooldownTxt: {fileID: 0}
