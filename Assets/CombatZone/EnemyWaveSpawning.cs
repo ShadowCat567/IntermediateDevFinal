@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyWaveSpawning : MonoBehaviour
 {
     int numEnemiesWave = 0;
-    int totalEnemies = 3;
+    [SerializeField] int totalEnemies = 3;
     public GameObject enemy;
     public GameObject combatZone;
 

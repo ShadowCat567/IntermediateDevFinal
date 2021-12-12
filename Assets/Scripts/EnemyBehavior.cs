@@ -35,10 +35,12 @@ public class EnemyBehavior : MonoBehaviour
     {
         //stun the enemy for 0.9 seconds
         enemyStunned = true;
-        Debug.Log("Enemy has been stunned");
+        // Debug.Log("Enemy has been stunned");
+        enemy.GetComponent<EnemyPatrol>().enabled = false;
         sr.color = Color.red;
-        yield return new WaitForSeconds(0.9f);
+        yield return new WaitForSeconds(1.3f);
         enemyStunned = false;
+        enemy.GetComponent<EnemyPatrol>().enabled = true;
         sr.color = Color.white;
     }
 }

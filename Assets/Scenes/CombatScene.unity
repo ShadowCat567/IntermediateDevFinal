@@ -988,6 +988,10 @@ PrefabInstance:
       propertyPath: combatZone
       value: 
       objectReference: {fileID: 499836411}
+    - target: {fileID: 5608138096936933110, guid: 87c9ba0b756a1044391f3983aa0d095e, type: 3}
+      propertyPath: totalEnemies
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5608138096936933111, guid: 87c9ba0b756a1044391f3983aa0d095e, type: 3}
       propertyPath: m_Name
       value: EnemyWaveSpawner
