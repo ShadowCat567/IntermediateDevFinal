@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using TMPro;
+//using TMPro;
 
 public class EnemyHealth : MonoBehaviour
 {
@@ -10,7 +10,7 @@ public class EnemyHealth : MonoBehaviour
     public GameObject enemy;
     public float enemyHealth = 1.0f;
     float maxHealth = 1.0f;
-    public TMP_Text enemyHealthTxt;
+   // public TMP_Text enemyHealthTxt;
     [SerializeField] GameObject healthBar;
 
     // Update is called once per frame
@@ -18,6 +18,6 @@ public class EnemyHealth : MonoBehaviour
     {
         //updates EnemyHealthTxt to enemy's current health
         healthBar.GetComponent<EnemyHealthBar>().UpdateHealthBar(enemyHealth);
-        enemyHealthTxt.text = "Health: " + enemyHealth;
+     //   enemyHealthTxt.text = "Health: " + enemyHealth;
     }
 }
