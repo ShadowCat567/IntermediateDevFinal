@@ -11,6 +11,8 @@ public class PolearmAttack : MonoBehaviour
     public GameObject spear;
     public GameObject spearCore;
 
+    [SerializeField] Animator spearAttackAnim;
+
     SpriteRenderer sr;
     [SerializeField] Sprite leftSprite;
     [SerializeField] Sprite rightSprite;
@@ -40,6 +42,7 @@ public class PolearmAttack : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         boxCollider = GetComponent<BoxCollider2D>();
         boxCollider.enabled = false;
+        spearAttackAnim.enabled = false;
     }
 
     void Attack()
@@ -47,6 +50,7 @@ public class PolearmAttack : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && player.GetComponent<PlayerAttack>().spearActive)
         {
             //when left mouse button is pressed, attack
+            spearAttackAnim.enabled = true;
             StartCoroutine(colliderActive());
         }
     }
@@ -140,7 +144,7 @@ public class PolearmAttack : MonoBehaviour
         while (counter < cooldown)
         {
             spearCooldownImg.color = new Color(1.0f, 1.0f, 1.0f, opacity);
-            spearCooldownTxt.text = "Spear Cooldown: " + counter;
+          //  spearCooldownTxt.text = "Spear Cooldown: " + counter;
             yield return new WaitForSeconds(1.0f);
             counter++;
             opacity += 0.15f;
@@ -149,7 +153,7 @@ public class PolearmAttack : MonoBehaviour
         yield return new WaitForSeconds(cooldown);
         spearCooldownImg.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
         canUseSpecial = true;
-        spearCooldownTxt.text = "Spear Cooldown: READY";
+      //  spearCooldownTxt.text = "Spear Cooldown: READY";
     }
 
     IEnumerator SpearPosition()
@@ -165,8 +169,19 @@ public class PolearmAttack : MonoBehaviour
     IEnumerator colliderActive()
     {
         //sets the spear's collider to active when the player attacks
+        if (!player.GetComponent<PlayerAttack>().facingLeft)
+        {
+            spearAttackAnim.Play("SpearAttkL");
+        }
+
+        else
+        {
+            spearAttackAnim.Play("SpearAttkR");
+        }
+
         boxCollider.enabled = true;
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(0.6f);
         boxCollider.enabled = false;
+        spearAttackAnim.enabled = false;
     }
 }

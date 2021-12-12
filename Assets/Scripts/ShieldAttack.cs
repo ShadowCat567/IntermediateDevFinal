@@ -8,6 +8,8 @@ public class ShieldAttack : MonoBehaviour
 {
     BoxCollider2D boxCollider;
 
+    [SerializeField] Animator shieldBlockAnim;
+
     SpriteRenderer sr;
     [SerializeField] Sprite rightSprite;
     [SerializeField] Sprite leftSprite;
@@ -28,6 +30,7 @@ public class ShieldAttack : MonoBehaviour
         boxCollider.enabled = false;
         sr = GetComponent<SpriteRenderer>();
         boxCollider.isTrigger = true;
+        shieldBlockAnim.enabled = false;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -46,6 +49,7 @@ public class ShieldAttack : MonoBehaviour
         if (Input.GetMouseButton(0) && player.GetComponent<PlayerAttack>().shieldActive)
         {
             //when left mouse botton is pressed, the shield blocks
+            shieldBlockAnim.enabled = true;
             StartCoroutine(Block());
         }
 
@@ -137,12 +141,23 @@ public class ShieldAttack : MonoBehaviour
     IEnumerator Block()
     {
         //activates the sheild's collider for 0.5 seconds to block incoming attacks
+        if (!player.GetComponent<PlayerAttack>().facingLeft)
+        {
+            shieldBlockAnim.Play("ShieldAttkR");
+        }
+
+        else
+        {
+            shieldBlockAnim.Play("ShieldAttkL");
+        }
+
         boxCollider.enabled = true;
         boxCollider.isTrigger = false;
-        sr.color = new Color(0.0f, 0.0f, 0.0f);
+       // sr.color = new Color(0.0f, 0.0f, 0.0f);
         yield return new WaitForSeconds(0.5f);
         boxCollider.isTrigger = true;
-        sr.color = new Color(1.0f, 1.0f, 1.0f);
+        shieldBlockAnim.enabled = false;
+      //  sr.color = new Color(1.0f, 1.0f, 1.0f);
     }
 
     IEnumerator SheildBash()

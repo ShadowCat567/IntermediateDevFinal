@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 6160999987779692971}
   - component: {fileID: 6160999987779692970}
   - component: {fileID: 6160999987779692969}
+  - component: {fileID: 3708388018370985674}
   m_Layer: 0
   m_Name: Spear
   m_TagString: Untagged
@@ -210,8 +211,29 @@ MonoBehaviour:
   player: {fileID: 0}
   spear: {fileID: 6160999987779692631}
   spearCore: {fileID: 6160999987586143063}
+  spearAttackAnim: {fileID: 3708388018370985674}
   leftSprite: {fileID: 21300000, guid: 7d46593c00628b145a0012f531fd7f21, type: 3}
   rightSprite: {fileID: 21300000, guid: 2c2dac9b4cb909e4d806e2306d910571, type: 3}
+  spearCooldownImg: {fileID: 0}
   cooldownSpear: 4
   spearCounter: 0
   spearCooldownTxt: {fileID: 0}
+--- !u!95 &3708388018370985674
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6160999987779692631}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b8866a4cdee3706439b797af8290bd79, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

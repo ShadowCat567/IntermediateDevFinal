@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3864115596412462601}
   - component: {fileID: 3864115596412462600}
   - component: {fileID: 1261307017428492764}
+  - component: {fileID: 4395594904993684785}
   m_Layer: 0
   m_Name: Shield
   m_TagString: Untagged
@@ -123,10 +124,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cab37967c946d64681fefa31a56afc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shieldBlockAnim: {fileID: 4395594904993684785}
   rightSprite: {fileID: 21300000, guid: 4648be04c565aa646919ea6fe3e5a798, type: 3}
   leftSprite: {fileID: 21300000, guid: e37a4e3ce4a6b5c43b0a2374dc07a312, type: 3}
+  shieldCooldownImg: {fileID: 0}
   player: {fileID: 0}
   shield: {fileID: 0}
   sheildCooldownTxt: {fileID: 0}
   cooldownShield: 1.5
   shieldCounter: 0
+--- !u!95 &4395594904993684785
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3864115596412462605}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cadfe4ec5ef8749428ad2c101fd9db1d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
