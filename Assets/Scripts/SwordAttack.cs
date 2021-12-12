@@ -12,6 +12,8 @@ public class SwordAttack : MonoBehaviour
     public GameObject player;
     public GameObject sword;
 
+    [SerializeField] Animator swordAttkAnim;
+
     SpriteRenderer sr;
     [SerializeField] Sprite rightSprite;
     [SerializeField] Sprite leftSprite;
@@ -30,6 +32,7 @@ public class SwordAttack : MonoBehaviour
         sr = GetComponent<SpriteRenderer>();
         boxCollider = GetComponent<BoxCollider2D>();
         boxCollider.enabled = false;
+        swordAttkAnim.enabled = false;
     }
 
     void Attack()
@@ -37,6 +40,7 @@ public class SwordAttack : MonoBehaviour
         if (Input.GetMouseButtonDown(0) && player.GetComponent<PlayerAttack>().swordActive)
         {
             //when left mouse button is pressed, attack
+            swordAttkAnim.enabled = true;
             StartCoroutine(colliderActive());
         }
     }
@@ -133,9 +137,20 @@ public class SwordAttack : MonoBehaviour
 
     IEnumerator colliderActive()
     {
+        if(!player.GetComponent<PlayerAttack>().facingLeft)
+        {
+            swordAttkAnim.Play("SwordAttkL");
+        }
+
+        else
+        {
+            swordAttkAnim.Play("SwordAttkR");
+        }
+
         //activate the collider for 0.8 seconds to complete the attack
         boxCollider.enabled = true;
-        yield return new WaitForSeconds(0.8f);
+        yield return new WaitForSeconds(0.6f);
         boxCollider.enabled = false;
+        swordAttkAnim.enabled = false;
     }
 }

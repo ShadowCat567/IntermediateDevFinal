@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 9081029527046206120}
   - component: {fileID: 9081029527046206121}
   - component: {fileID: 9081029527046206122}
+  - component: {fileID: 2390834348147813342}
   m_Layer: 0
   m_Name: Sword
   m_TagString: Untagged
@@ -26,13 +27,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9081029527046206123}
-  m_LocalRotation: {x: -0, y: -0, z: -0.70756984, w: 0.7066435}
-  m_LocalPosition: {x: 0.6321, y: 0.2774, z: 0}
-  m_LocalScale: {x: 0.74523246, y: 1.0806966, z: 1.1526448}
+  m_LocalRotation: {x: -0, y: -0, z: -0.0036951902, w: 0.9999932}
+  m_LocalPosition: {x: 0.632024, y: 0.2774759, z: 0}
+  m_LocalScale: {x: 0.9111194, y: 1.0806966, z: 1.1526448}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.075}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.423}
 --- !u!212 &9081029527046206120
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -98,7 +99,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.07787681, y: 0}
+  m_Offset: {x: 0.008773744, y: -0.0016341805}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -109,7 +110,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.2993248, y: 1}
+  m_Size: {x: 0.64756966, y: 0.16109592}
   m_EdgeRadius: 0
 --- !u!114 &9081029527046206122
 MonoBehaviour:
@@ -126,9 +127,29 @@ MonoBehaviour:
   playerTransform: {fileID: 0}
   player: {fileID: 0}
   sword: {fileID: 9081029527046206123}
+  swordAttkAnim: {fileID: 2390834348147813342}
   rightSprite: {fileID: 21300000, guid: 8c83e9272719deb4f9241c70172b7292, type: 3}
   leftSprite: {fileID: 21300000, guid: bd36760e03c03aa40a3a6b71d45f91c7, type: 3}
+  swordCooldownImg: {fileID: 0}
   cooldownTimerSword: 1
   swordCounter: 0
-  swordCooldownTxt: {fileID: 0}
   ProjectilePrefab: {fileID: 6012703571794640945, guid: a1010552fcb07714ea827e92c2b10b63, type: 3}
+--- !u!95 &2390834348147813342
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9081029527046206123}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6a0094dad73af2c4486f80e6e2eb737d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
