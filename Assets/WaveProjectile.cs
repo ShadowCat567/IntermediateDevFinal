@@ -5,8 +5,9 @@ using UnityEngine;
 public class WaveProjectile : MonoBehaviour
 {
     Rigidbody2D rb;
-    [SerializeField] float speed = 1.5f; 
+    [SerializeField] float speed = 1.5f;
 
+    float projectileSpeed = 5.0f;
     Vector2 direction;
     float playerSpeed;
     public bool MovingLeft;
@@ -23,6 +24,11 @@ public class WaveProjectile : MonoBehaviour
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             playerSpeed = (playerSpeed) * -1;
+        }
+
+        if(playerSpeed == 0)
+        {
+            playerSpeed = projectileSpeed;
         }
     }
 
