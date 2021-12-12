@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class SwordAttack : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class SwordAttack : MonoBehaviour
     SpriteRenderer sr;
     [SerializeField] Sprite rightSprite;
     [SerializeField] Sprite leftSprite;
+    [SerializeField] Image swordCooldownImg;
 
     public float cooldownTimerSword = 1.0f;
     public float swordCounter;
@@ -48,6 +50,7 @@ public class SwordAttack : MonoBehaviour
         {
             //perform special ability
             WaveAttack();
+            swordCooldownImg.color = new Color(1.0f, 1.0f, 1.0f, 0.4f);
             StartCoroutine(SpecialCooldown(cooldownTimerSword, swordCounter));
         }
     }
@@ -105,15 +108,19 @@ public class SwordAttack : MonoBehaviour
     IEnumerator SpecialCooldown(float cooldown, float counter)
     {
         counter = 0;
+        float opacity = 0.4f;
         canUseSpecial = false;
         while (counter < cooldown)
         {
             swordCooldownTxt.text = "Sword Cooldown: " + counter;
+            swordCooldownImg.color = new Color(1.0f, 1.0f, 1.0f, opacity);
             yield return new WaitForSeconds(0.1f);
             counter ++;
+            opacity += 0.2f;
         }
 
         yield return new WaitForSeconds(cooldown);
+        swordCooldownImg.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
         swordCooldownTxt.text = "Sword Cooldown: READY";
         canUseSpecial = true;
     }

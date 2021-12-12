@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class ShieldAttack : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class ShieldAttack : MonoBehaviour
     SpriteRenderer sr;
     [SerializeField] Sprite rightSprite;
     [SerializeField] Sprite leftSprite;
+    [SerializeField] Image shieldCooldownImg;
 
     public GameObject player;
     public GameObject shield;
@@ -63,6 +65,7 @@ public class ShieldAttack : MonoBehaviour
                 canUseSpecial = true;
             }
 
+            shieldCooldownImg.color = new Color(1.0f, 1.0f, 1.0f, 0.4f);
             StartCoroutine(SpecialCooldown(cooldownShield, shieldCounter));
             //perform special ability
             //if enemy is within a certain range, dash to the enemy -- how to get the enemy that is in that range
@@ -114,16 +117,20 @@ public class ShieldAttack : MonoBehaviour
     IEnumerator SpecialCooldown(float cooldown, float counter)
     {
         counter = 0;
+        float opacity = 0.4f;
         canUseSpecial = false;
         while (counter < cooldown)
         {
             sheildCooldownTxt.text = "Shield Cooldown: " + counter;
+            shieldCooldownImg.color = new Color(1.0f, 1.0f, 1.0f, opacity);
             yield return new WaitForSeconds(0.5f);
             counter += 0.5f;
+            opacity += 0.15f;
         }
 
         yield return new WaitForSeconds(1.5f);
         canUseSpecial = true;
+        shieldCooldownImg.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
         sheildCooldownTxt.text = "Shield Cooldown: READY";
     }
 

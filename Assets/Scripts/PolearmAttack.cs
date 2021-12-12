@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class PolearmAttack : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class PolearmAttack : MonoBehaviour
     SpriteRenderer sr;
     [SerializeField] Sprite leftSprite;
     [SerializeField] Sprite rightSprite;
+    [SerializeField] Image spearCooldownImg;
 
     float speed = 1000.0f;
 
@@ -66,6 +68,7 @@ public class PolearmAttack : MonoBehaviour
                     canUseSpecial = true;
                 }
 
+                spearCooldownImg.color = new Color(1.0f, 1.0f, 1.0f, 0.25f);
                 StartCoroutine(SpecialCooldown(cooldownSpear, spearCounter));
             }
 
@@ -93,7 +96,7 @@ public class PolearmAttack : MonoBehaviour
     {
         if (player.GetComponent<PlayerAttack>().facingLeft)
         {
-            spear.transform.localPosition = new Vector3(-0.9f, -0.2f, 0);
+            spear.transform.localPosition = new Vector3(-0.9f, -0.3f, 0);
             sr.sprite = leftSprite;
             player.GetComponent<PlayerAttack>().facingLeft = false;
         }
@@ -132,15 +135,19 @@ public class PolearmAttack : MonoBehaviour
     IEnumerator SpecialCooldown(float cooldown, float counter)
     {
         counter = 0;
+        float opacity = 0.3f;
         canUseSpecial = false;
         while (counter < cooldown)
         {
+            spearCooldownImg.color = new Color(1.0f, 1.0f, 1.0f, opacity);
             spearCooldownTxt.text = "Spear Cooldown: " + counter;
             yield return new WaitForSeconds(1.0f);
             counter++;
+            opacity += 0.15f;
         }
 
         yield return new WaitForSeconds(cooldown);
+        spearCooldownImg.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
         canUseSpecial = true;
         spearCooldownTxt.text = "Spear Cooldown: READY";
     }
