@@ -7,6 +7,8 @@ public class WaveProjectile : MonoBehaviour
     Rigidbody2D rb;
     [SerializeField] float speed = 1.5f;
 
+    [SerializeField] Animator projectileAnim;
+
     float projectileSpeed = 5.0f;
     Vector2 direction;
     float playerSpeed;
@@ -15,7 +17,7 @@ public class WaveProjectile : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        direction = GameObject.Find("Sword").transform.localPosition;
+        direction = new Vector2(GameObject.Find("Sword").transform.localPosition.x, -GameObject.Find("Sword").transform.localPosition.y);
         playerSpeed = GameObject.Find("Player").GetComponent<PlayerMovement>().xSpeed; 
     }
 
@@ -24,9 +26,15 @@ public class WaveProjectile : MonoBehaviour
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             playerSpeed = (playerSpeed) * -1;
+            projectileAnim.Play("WavePorjectileLeft");
         }
 
-        if(playerSpeed == 0)
+        else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+        {
+            projectileAnim.Play("WaveProjectileRight");
+        }
+    
+        if (playerSpeed == 0)
         {
             playerSpeed = projectileSpeed;
         }

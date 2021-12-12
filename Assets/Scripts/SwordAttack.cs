@@ -19,7 +19,7 @@ public class SwordAttack : MonoBehaviour
 
     public float cooldownTimerSword = 1.0f;
     public float swordCounter;
-    public TMP_Text swordCooldownTxt;
+  //  public TMP_Text swordCooldownTxt;
 
     [SerializeField] GameObject ProjectilePrefab;
 
@@ -87,7 +87,7 @@ public class SwordAttack : MonoBehaviour
     void WaveAttack()
     {
         GameObject projectile;
-        projectile = Instantiate(ProjectilePrefab, transform.position, Quaternion.identity);
+        projectile = Instantiate(ProjectilePrefab, new Vector3(transform.position.x, transform.position.y + 1.5f, transform.position.z), Quaternion.identity);
         StartCoroutine(KillProjectile(0.7f, projectile));
     }
 
@@ -112,7 +112,7 @@ public class SwordAttack : MonoBehaviour
         canUseSpecial = false;
         while (counter < cooldown)
         {
-            swordCooldownTxt.text = "Sword Cooldown: " + counter;
+           // swordCooldownTxt.text = "Sword Cooldown: " + counter;
             swordCooldownImg.color = new Color(1.0f, 1.0f, 1.0f, opacity);
             yield return new WaitForSeconds(0.1f);
             counter ++;
@@ -121,7 +121,7 @@ public class SwordAttack : MonoBehaviour
 
         yield return new WaitForSeconds(cooldown);
         swordCooldownImg.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
-        swordCooldownTxt.text = "Sword Cooldown: READY";
+       // swordCooldownTxt.text = "Sword Cooldown: READY";
         canUseSpecial = true;
     }
 
