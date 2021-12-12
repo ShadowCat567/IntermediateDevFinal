@@ -81,6 +81,7 @@ public class PolearmAttack : MonoBehaviour
                 //when F key is pressed and spearThrown is false, spear is thrown and spearThrown is set to true
                 ThrowSpear();
                 spear.transform.SetParent(null);
+                boxCollider.isTrigger = false;
                 spearThrown = true;
             }
         }
@@ -161,6 +162,7 @@ public class PolearmAttack : MonoBehaviour
         //player moves to the spear's position
         player.GetComponent<PlayerAttack>().spearMove = true;
         player.GetComponent<PlayerAttack>().MoveToSpear();
+        boxCollider.isTrigger = true;
         yield return new WaitForSeconds(0.01f);
         spear.transform.SetParent(player.transform);
         spearThrown = false;

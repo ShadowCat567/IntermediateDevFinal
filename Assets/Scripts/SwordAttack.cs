@@ -90,23 +90,11 @@ public class SwordAttack : MonoBehaviour
 
     void WaveAttack()
     {
+        swordAttkAnim.enabled = true;
+        StartCoroutine(specialAnimation());
         GameObject projectile;
         projectile = Instantiate(ProjectilePrefab, new Vector3(transform.position.x, transform.position.y + 1.5f, transform.position.z), Quaternion.identity);
         StartCoroutine(KillProjectile(0.7f, projectile));
-    }
-
-    void ProjectileDecideDirection(GameObject projectile)
-    {
-        if (Input.GetKeyDown(KeyCode.D) || Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            projectile.GetComponent<WaveProjectile>().MovingLeft = false;
-        }
-
-        if (Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            projectile.GetComponent<WaveProjectile>().MovingLeft = true;
-          //  Debug.Log("Moving left");
-        }
     }
 
     IEnumerator SpecialCooldown(float cooldown, float counter)
@@ -133,6 +121,22 @@ public class SwordAttack : MonoBehaviour
     {
         yield return new WaitForSeconds(lifetime);
         Destroy(projectile);
+    }
+
+    IEnumerator specialAnimation()
+    {
+        if (!player.GetComponent<PlayerAttack>().facingLeft)
+        {
+            swordAttkAnim.Play("SwordSpecL");
+        }
+
+        else
+        {
+            swordAttkAnim.Play("SwordSpecR");
+        }
+
+        yield return new WaitForSeconds(0.15f);
+        swordAttkAnim.enabled = false;
     }
 
     IEnumerator colliderActive()
