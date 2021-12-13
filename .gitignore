@@ -81,3 +81,5 @@ crashlytics-build.properties
 *.log
 *.log
 *.log
+*.log
+*.asset

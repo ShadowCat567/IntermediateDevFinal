@@ -27,12 +27,15 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb2d;
     private CircleCollider2D box2d;
 
+    private SpriteRenderer SpriteRenderer;
+
 
 
     void Start()
     {
         rb2d = transform.GetComponent<Rigidbody2D>();
         box2d = transform.GetComponent<CircleCollider2D>();
+        SpriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     //Detects for ground underneath player. Might adjust the offset so the player can jump while being farther away from the ground? Will look into it. 
@@ -57,6 +60,7 @@ public class PlayerMovement : MonoBehaviour
         //Left movement.
         if ((Input.GetKey("left")) && (xSpeed > -maxSpeed))
         {
+            SpriteRenderer.flipX = true;
             //Transfers momentum if the player is already moving in a direction. Feels good, I think. 
             if (xSpeed > -maxSpeed / 4)
             {
@@ -69,6 +73,7 @@ public class PlayerMovement : MonoBehaviour
         //Right movement, same as before. 
         else if ((Input.GetKey("right")) && (xSpeed < maxSpeed))
         {
+            SpriteRenderer.flipX = false;
             if (xSpeed < maxSpeed / 4)
             {
                 xSpeed = xSpeed + dec;
