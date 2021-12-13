@@ -91,7 +91,7 @@ public class PolearmAttack : MonoBehaviour
     {
         if (!player.GetComponent<PlayerAttack>().facingLeft)
         {
-            spear.transform.localPosition = new Vector3(0.9f, -0.02f, 0);
+            spear.transform.localPosition = new Vector3(0.9f, -0.29f, 0);
             sr.sprite = rightSprite;
             player.GetComponent<PlayerAttack>().facingLeft = true;
         }
@@ -101,7 +101,7 @@ public class PolearmAttack : MonoBehaviour
     {
         if (player.GetComponent<PlayerAttack>().facingLeft)
         {
-            spear.transform.localPosition = new Vector3(-0.9f, -0.02f, 0);
+            spear.transform.localPosition = new Vector3(-0.9f, -0.29f, 0);
             sr.sprite = leftSprite;
             player.GetComponent<PlayerAttack>().facingLeft = false;
         }

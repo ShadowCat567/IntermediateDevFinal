@@ -82,7 +82,7 @@ public class ShieldAttack : MonoBehaviour
     {
         if (!player.GetComponent<PlayerAttack>().facingLeft)
         {
-            shield.transform.localPosition = new Vector3(0.75f, -0.1f, 0);
+            shield.transform.localPosition = new Vector3(0.96f, -0.1f, 0);
             sr.sprite = rightSprite;
             player.GetComponent<PlayerAttack>().facingLeft = true;
         }
@@ -92,7 +92,7 @@ public class ShieldAttack : MonoBehaviour
     {
         if (player.GetComponent<PlayerAttack>().facingLeft)
         {
-            shield.transform.localPosition = new Vector3(-0.85f, 0.1f, 0);
+            shield.transform.localPosition = new Vector3(-1.1f, 0.1f, 0);
             sr.sprite = leftSprite;
             player.GetComponent<PlayerAttack>().facingLeft = false;
         }

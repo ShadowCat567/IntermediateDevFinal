@@ -63,7 +63,7 @@ public class SwordAttack : MonoBehaviour
     {
         if(!player.GetComponent<PlayerAttack>().facingLeft)
         {
-            sword.transform.localPosition = new Vector3(0.63f, 0.02f, 0);
+            sword.transform.localPosition = new Vector3(0.75f, -0.27f, 0);
             sr.sprite = rightSprite;
             player.GetComponent<PlayerAttack>().facingLeft = true;
         }
@@ -73,7 +73,7 @@ public class SwordAttack : MonoBehaviour
     {
         if(player.GetComponent<PlayerAttack>().facingLeft)
         {
-            sword.transform.localPosition = new Vector3(-0.63f, 0.02f, 0);
+            sword.transform.localPosition = new Vector3(-0.75f, -0.27f, 0);
             sr.sprite = leftSprite;
             player.GetComponent<PlayerAttack>().facingLeft = false;
         }
@@ -84,7 +84,7 @@ public class SwordAttack : MonoBehaviour
         if (collision.gameObject.tag == "Enemy" && player.GetComponent<PlayerAttack>().swordActive)
         {
             //if sword collides with an enemy, make the enemy take one damage
-            collision.GetComponent<EnemyHealth>().enemyHealth -= 0.1f;
+            collision.GetComponent<EnemyHealth>().enemyHealth -= 0.2f;
         }
     }
 
