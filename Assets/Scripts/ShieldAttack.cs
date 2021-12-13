@@ -53,7 +53,7 @@ public class ShieldAttack : MonoBehaviour
             StartCoroutine(Block());
         }
 
-        if (Input.GetKeyDown(KeyCode.F) && canUseSpecial && player.GetComponent<PlayerAttack>().shieldActive)
+        if (Input.GetKeyDown(KeyCode.F) || Input.GetKeyDown(KeyCode.M) && canUseSpecial && player.GetComponent<PlayerAttack>().shieldActive)
         {
             //finds a targetEnemy and moves to that targetEnemy, stunning it
             GameObject targetEnemy = EnemyInDetectDistance();
