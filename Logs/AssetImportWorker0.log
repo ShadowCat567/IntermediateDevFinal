@@ -15,11 +15,11 @@ C:/Users/kiara/Documents/GitHub/IntermediateDevFinal
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-56100
+52200
 Successfully changed project path to: C:/Users/kiara/Documents/GitHub/IntermediateDevFinal
 C:/Users/kiara/Documents/GitHub/IntermediateDevFinal
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 180.28 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 105.59 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.16f1 (5fa502fca597)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.16f1/Editor/Data/Resources/UnitySubsystems
@@ -37,93 +37,93 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.16f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.16f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.16f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56148
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56236
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.16f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.003816 seconds.
+Registered in 0.001996 seconds.
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 321.09 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 133.07 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.788 seconds
+- Completed reload, in  1.339 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2789ms)
-		BeginReloadAssembly (146ms)
+	ReloadAssembly (1339ms)
+		BeginReloadAssembly (68ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (2ms)
-		EndReloadAssembly (1183ms)
-			LoadAssemblies (141ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (531ms)
+			LoadAssemblies (67ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (392ms)
+			SetupTypeCache (172ms)
 			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (92ms)
-			SetupLoadedEditorAssemblies (601ms)
+			RebuildScriptCaches (37ms)
+			SetupLoadedEditorAssemblies (273ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (13ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (321ms)
-				BeforeProcessingInitializeOnLoad (2ms)
-				ProcessInitializeOnLoadAttributes (199ms)
-				ProcessInitializeOnLoadMethodAttributes (66ms)
+				RefreshPlugins (133ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (101ms)
+				ProcessInitializeOnLoadMethodAttributes (31ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (0ms)
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.013483 seconds.
+Registered in 0.007173 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\kiara\Documents\GitHub\IntermediateDevFinal\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\kiara\Documents\GitHub\IntermediateDevFinal\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 164.40 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 113.78 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.429 seconds
+- Completed reload, in  1.558 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2429ms)
-		BeginReloadAssembly (291ms)
+	ReloadAssembly (1558ms)
+		BeginReloadAssembly (167ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (8ms)
+			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (26ms)
-		EndReloadAssembly (2032ms)
-			LoadAssemblies (206ms)
+			CreateAndSetChildDomain (19ms)
+		EndReloadAssembly (1326ms)
+			LoadAssemblies (106ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (667ms)
+			SetupTypeCache (395ms)
 			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (96ms)
-			SetupLoadedEditorAssemblies (879ms)
+			RebuildScriptCaches (74ms)
+			SetupLoadedEditorAssemblies (645ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
+				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (164ms)
-				BeforeProcessingInitializeOnLoad (176ms)
-				ProcessInitializeOnLoadAttributes (496ms)
-				ProcessInitializeOnLoadMethodAttributes (27ms)
-				AfterProcessingInitializeOnLoad (8ms)
+				RefreshPlugins (114ms)
+				BeforeProcessingInitializeOnLoad (134ms)
+				ProcessInitializeOnLoadAttributes (364ms)
+				ProcessInitializeOnLoadMethodAttributes (17ms)
+				AfterProcessingInitializeOnLoad (12ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (14ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Shader 'Ferr/2D Terrain/Pixel Lit/Lightmap Textured Vertex Color Transparent (8 lights|lightmap +0 light)': fallback shader 'Ferr/Lit Textured Vertex Color Transparent (4 lights|lightmap +1 light)' not found
 Shader 'Ferr/2D Terrain/Pixel Lit/Lightmap Textured Vertex Color (8 lights|lightmap +0 light)': fallback shader 'Ferr/Lit Textured Vertex Color (4 lights|lightmap +1 light)' not found
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.12 seconds
-Refreshing native plugins compatible for Editor in 2.05 ms, found 4 plugins.
+Shader 'Ferr/2D Terrain/Pixel Lit/Lightmap Textured Vertex Color Transparent (8 lights|lightmap +0 light)': fallback shader 'Ferr/Lit Textured Vertex Color Transparent (4 lights|lightmap +1 light)' not found
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.13 seconds
+Refreshing native plugins compatible for Editor in 1.47 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 4004 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 153.5 MB.
-System memory in use after: 153.7 MB.
+Unloading 4007 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 153.6 MB.
+System memory in use after: 153.8 MB.
 
-Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 4453.
-Total: 8.575900 ms (FindLiveObjects: 0.291800 ms CreateObjectMapping: 0.639000 ms MarkObjects: 7.554500 ms  DeleteObjects: 0.089200 ms)
+Unloading 34 unused Assets to reduce memory usage. Loaded Objects now: 4457.
+Total: 4.581600 ms (FindLiveObjects: 0.294000 ms CreateObjectMapping: 0.200800 ms MarkObjects: 4.003800 ms  DeleteObjects: 0.081900 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -138,196 +138,100 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/EnvironmentScene.unity
-  artifactKey: Guid(d9dc5dc61e7c6084c951ff65164e110d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/EnvironmentScene.unity using Guid(d9dc5dc61e7c6084c951ff65164e110d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b0ad5b0e269d34b48a6d9acfaddc4d2') in 0.025745 seconds 
+  path: Assets/Scenes/Animation/sword (2).png
+  artifactKey: Guid(009187d4beb325c48bcf5c2f275eb0cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Animation/sword (2).png using Guid(009187d4beb325c48bcf5c2f275eb0cc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aeb705d08c3c528864981314e30ed4a5') in 0.147134 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.341327 seconds.
-  path: Assets/Scenes/enemySpawn.unity
-  artifactKey: Guid(759c8c6a672492b4a83e74facfe25643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/enemySpawn.unity using Guid(759c8c6a672492b4a83e74facfe25643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdd147e3b4085f98ea20e7212887d14f') in 0.014074 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.790889 seconds.
-  path: Assets/Scenes/DefeatScreen.unity
-  artifactKey: Guid(6695497b270221c4b824fe06c7397db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/DefeatScreen.unity using Guid(6695497b270221c4b824fe06c7397db1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '702e11b5ddb075790f973b6e2056b8c2') in 0.013037 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 18.766158 seconds.
-  path: Assets/CombatZone/EnemyWaveSpawner.prefab
-  artifactKey: Guid(87c9ba0b756a1044391f3983aa0d095e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CombatZone/EnemyWaveSpawner.prefab using Guid(87c9ba0b756a1044391f3983aa0d095e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '362795a852867878a5a60c9cc01646de') in 0.376933 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000364 seconds.
-  path: Assets/CombatZone/TestingEnemy.prefab
-  artifactKey: Guid(13622c546b58c7546ab052f7dda49b1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CombatZone/TestingEnemy.prefab using Guid(13622c546b58c7546ab052f7dda49b1a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d0ea6d994eb946bad8e8f23811ce449') in 0.080964 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.939943 seconds.
-  path: Assets/EnemyHealthBar.cs
-  artifactKey: Guid(cfd1a309b49f6ba4eacb92977a627feb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/EnemyHealthBar.cs using Guid(cfd1a309b49f6ba4eacb92977a627feb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0171b1f60f3bdbabc4c37b5a9ff407a1') in 0.020428 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.221345 seconds.
-  path: Assets/Scripts/EnemyHealth.cs
-  artifactKey: Guid(7ace13cb7ae7b4d43954ab801ef906eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/EnemyHealth.cs using Guid(7ace13cb7ae7b4d43954ab801ef906eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af47d9d6f5c080353b331f23e56cf2ad') in 0.010958 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 168.295139 seconds.
-  path: Assets/CombatZone/HealthBar.png
-  artifactKey: Guid(04a58c46b088cf9418c65bbc3181c968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CombatZone/HealthBar.png using Guid(04a58c46b088cf9418c65bbc3181c968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3213df440eb52f77699ca0ff15705f19') in 0.089227 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.600875 seconds.
-  path: Assets/CombatZone/CombatZone.cs
-  artifactKey: Guid(7de2ab2f9991f8b4fb770bead9cd59cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/CombatZone/CombatZone.cs using Guid(7de2ab2f9991f8b4fb770bead9cd59cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dc8ee4c476e9644e69f0996c95d1fd96') in 0.013876 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.995978 seconds.
-  path: Assets/Scenes/CombatScene.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/CombatScene.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac28df97f3e4a44d3cdd9a0ae609c2b4') in 0.015253 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 198.728029 seconds.
-  path: Assets/Prefabs/Player.prefab
-  artifactKey: Guid(024ea094e6f79e94493eedc2b1321708) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Player.prefab using Guid(024ea094e6f79e94493eedc2b1321708) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c04d7fb7bb0e5ccdc36467bb7f372ac3') in 0.132662 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 135.076876 seconds.
-  path: Assets/Scripts/PlayerAttack.cs
-  artifactKey: Guid(a7a4b5e91dadecd4a86f905578cbeaab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/PlayerAttack.cs using Guid(a7a4b5e91dadecd4a86f905578cbeaab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5421aafc0c75a7534c44f8a696633ae5') in 0.039357 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 89.173288 seconds.
-  path: Assets/Weapon Prefabs
-  artifactKey: Guid(28eeca0f2eecda74da465587fdfe8024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Weapon Prefabs using Guid(28eeca0f2eecda74da465587fdfe8024) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75ec6b1f9f0ac0851f87d4f7b1db7821') in 0.011251 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.768192 seconds.
-  path: Assets/WeaponUI
-  artifactKey: Guid(faa39a4e6a122f04ea49f8f8d8754a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/WeaponUI using Guid(faa39a4e6a122f04ea49f8f8d8754a62) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '961e5f8bdc441c372333b330a6b63659') in 0.013407 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.016665 seconds.
-  path: Assets/Weapon Prefabs/Shield.prefab
-  artifactKey: Guid(2a60d3264fcef9049bde13c1419c157d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Weapon Prefabs/Shield.prefab using Guid(2a60d3264fcef9049bde13c1419c157d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fec009f5bdd4ae7b7def662871a470f') in 0.027977 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000237 seconds.
-  path: Assets/Weapon Prefabs/Spear.prefab
-  artifactKey: Guid(d4c633055ecedb242a3c527b2afe6174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Weapon Prefabs/Spear.prefab using Guid(d4c633055ecedb242a3c527b2afe6174) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '054cba2504bffd73826a16e47817132e') in 0.043119 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000268 seconds.
-  path: Assets/Weapon Prefabs/Sword.prefab
-  artifactKey: Guid(16efec89f5cac4b46a7f65bf8237d745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Weapon Prefabs/Sword.prefab using Guid(16efec89f5cac4b46a7f65bf8237d745) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f34adb00715daf3b6b467ca021e2fc4') in 0.036483 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.664356 seconds.
-  path: Assets/Weapon Prefabs/BasicCameraFollowIgnore.cs
-  artifactKey: Guid(dd6e32aefbb43fb40891ff81207cd45e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Weapon Prefabs/BasicCameraFollowIgnore.cs using Guid(dd6e32aefbb43fb40891ff81207cd45e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e27c9547ea6903fbccadaa8bf1e8ecc9') in 0.015566 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.064051 seconds.
-  path: Assets/Scripts/BasicPlayerMove.cs
-  artifactKey: Guid(df8c2a6ad03745e48a0c24f280712e09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/BasicPlayerMove.cs using Guid(df8c2a6ad03745e48a0c24f280712e09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6895486d8f9499783d6a6c3510d9a566') in 0.024275 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.100957 seconds.
-  path: Assets/Scripts/EnemyBehavior.cs
-  artifactKey: Guid(1013465c2878b9a44870eb7c4d2ab1fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/EnemyBehavior.cs using Guid(1013465c2878b9a44870eb7c4d2ab1fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b64a61c7dc271f6cc67de2ac1b1272d6') in 0.017120 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.265768 seconds.
-  path: Assets/Scripts/SwordAttack.cs
-  artifactKey: Guid(9f94883e94b6a54438dd62a9d744d19e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/SwordAttack.cs using Guid(9f94883e94b6a54438dd62a9d744d19e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4daaf9b1434635f1456fe48d5b3b8c2a') in 0.023953 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 32.348081 seconds.
+  Time since last request: 0.000376 seconds.
   path: Assets/Scripts/PolearmAttack.cs
   artifactKey: Guid(32bd82814b1bb6f4aa536e0e853e009f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/PolearmAttack.cs using Guid(32bd82814b1bb6f4aa536e0e853e009f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7be7476fef0a598d9f0af126bd58fa2') in 0.031268 seconds 
+Start importing Assets/Scripts/PolearmAttack.cs using Guid(32bd82814b1bb6f4aa536e0e853e009f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b61d87710973496b4f68a1e146f8f0c7') in 0.016082 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 97.971478 seconds.
-  path: Assets/WaveProjectile.prefab
-  artifactKey: Guid(a1010552fcb07714ea827e92c2b10b63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/WaveProjectile.prefab using Guid(a1010552fcb07714ea827e92c2b10b63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd891e4215ce59fd40d5760ecdfd681aa') in 0.047690 seconds 
+  Time since last request: 0.000300 seconds.
+  path: Assets/Animation/SwordSpecialRight/sword1.png
+  artifactKey: Guid(82e3663111d7f444698949bdf8de4939) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/SwordSpecialRight/sword1.png using Guid(82e3663111d7f444698949bdf8de4939) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1fcc6a4cc23a389b10c119f0b4793f95') in 0.030827 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 11.107509 seconds.
-  path: Assets/PlayerHealthBar.cs
-  artifactKey: Guid(c9cd2ada650b4e94ea082aa8453d12d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerHealthBar.cs using Guid(c9cd2ada650b4e94ea082aa8453d12d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b41e7abd76151647d855a72033739eb5') in 0.061529 seconds 
+  Time since last request: 0.000226 seconds.
+  path: Assets/Scenes/Animation/sword.png
+  artifactKey: Guid(5d55c79486b20da44a8e9aa7d6b422c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Animation/sword.png using Guid(5d55c79486b20da44a8e9aa7d6b422c2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e857e13d58df1018fd4f8c2fe4bfc1a') in 0.020777 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 156.139938 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(752df46d87ac2384486af5660afc381e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(752df46d87ac2384486af5660afc381e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5c3bcd342124d5519ec961fb5a0ba0f1') in 0.043072 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000230 seconds.
+  path: Assets/Prefabs/Player.prefab
+  artifactKey: Guid(024ea094e6f79e94493eedc2b1321708) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Player.prefab using Guid(024ea094e6f79e94493eedc2b1321708) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35fd35b0bbff42ac8efec6ca75a89577') in 0.027546 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.571345 seconds.
+  path: Assets/Prefabs/player 1.prefab
+  artifactKey: Guid(e98f07a011a45514f96c9ddf1df8d6ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/player 1.prefab using Guid(e98f07a011a45514f96c9ddf1df8d6ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4e049ef13991d044d6fcb33d04cb1c1') in 0.026436 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.352366 seconds.
+  path: Assets/BRADHITC SDF.asset
+  artifactKey: Guid(af05220248d1a2245b5b99a07e739ab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/BRADHITC SDF.asset using Guid(af05220248d1a2245b5b99a07e739ab5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12efc8a73e849fbdcdc8d69063211fe0') in 0.112392 seconds 
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.022123 seconds.
+Registered in 0.147136 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\kiara\Documents\GitHub\IntermediateDevFinal\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\kiara\Documents\GitHub\IntermediateDevFinal\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 2.89 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 0.75 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.542 seconds
+- Completed reload, in  1.693 seconds
 Domain Reload Profiling:
-	ReloadAssembly (3542ms)
-		BeginReloadAssembly (318ms)
+	ReloadAssembly (1693ms)
+		BeginReloadAssembly (177ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (19ms)
+			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (84ms)
-		EndReloadAssembly (3034ms)
-			LoadAssemblies (288ms)
+			CreateAndSetChildDomain (53ms)
+		EndReloadAssembly (1447ms)
+			LoadAssemblies (119ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1460ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (139ms)
-			SetupLoadedEditorAssemblies (923ms)
+			SetupTypeCache (483ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (552ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (47ms)
-				SetLoadedEditorAssemblies (1ms)
-				RefreshPlugins (3ms)
-				BeforeProcessingInitializeOnLoad (230ms)
-				ProcessInitializeOnLoadAttributes (614ms)
-				ProcessInitializeOnLoadMethodAttributes (18ms)
-				AfterProcessingInitializeOnLoad (11ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (75ms)
+				ProcessInitializeOnLoadAttributes (454ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (19ms)
 Platform modules already initialized, skipping
-Shader 'Ferr/2D Terrain/Pixel Lit/Lightmap Textured Vertex Color Transparent (8 lights|lightmap +0 light)': fallback shader 'Ferr/Lit Textured Vertex Color Transparent (4 lights|lightmap +1 light)' not found
 Shader 'Ferr/2D Terrain/Pixel Lit/Lightmap Textured Vertex Color (8 lights|lightmap +0 light)': fallback shader 'Ferr/Lit Textured Vertex Color (4 lights|lightmap +1 light)' not found
-Refreshing native plugins compatible for Editor in 1.03 ms, found 4 plugins.
+Shader 'Ferr/2D Terrain/Pixel Lit/Lightmap Textured Vertex Color Transparent (8 lights|lightmap +0 light)': fallback shader 'Ferr/Lit Textured Vertex Color Transparent (4 lights|lightmap +1 light)' not found
+Refreshing native plugins compatible for Editor in 0.95 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3959 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 154.1 MB.
-System memory in use after: 154.3 MB.
+Unloading 3964 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 156.8 MB.
+System memory in use after: 157.0 MB.
 
-Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 4481.
-Total: 5.867800 ms (FindLiveObjects: 0.297500 ms CreateObjectMapping: 0.212200 ms MarkObjects: 5.316700 ms  DeleteObjects: 0.040300 ms)
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 4567.
+Total: 4.105100 ms (FindLiveObjects: 0.298700 ms CreateObjectMapping: 0.168500 ms MarkObjects: 3.601800 ms  DeleteObjects: 0.035100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -343,245 +247,119 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.019852 seconds.
+Registered in 0.006392 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\kiara\Documents\GitHub\IntermediateDevFinal\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\kiara\Documents\GitHub\IntermediateDevFinal\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.92 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.01 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.805 seconds
+- Completed reload, in  1.489 seconds
 Domain Reload Profiling:
-	ReloadAssembly (2806ms)
-		BeginReloadAssembly (431ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (69ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (95ms)
-		EndReloadAssembly (2153ms)
-			LoadAssemblies (533ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (844ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (79ms)
-			SetupLoadedEditorAssemblies (584ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (0ms)
-				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (106ms)
-				ProcessInitializeOnLoadAttributes (448ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (9ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (26ms)
-Platform modules already initialized, skipping
-Shader 'Ferr/2D Terrain/Pixel Lit/Lightmap Textured Vertex Color Transparent (8 lights|lightmap +0 light)': fallback shader 'Ferr/Lit Textured Vertex Color Transparent (4 lights|lightmap +1 light)' not found
-Shader 'Ferr/2D Terrain/Pixel Lit/Lightmap Textured Vertex Color (8 lights|lightmap +0 light)': fallback shader 'Ferr/Lit Textured Vertex Color (4 lights|lightmap +1 light)' not found
-Refreshing native plugins compatible for Editor in 0.93 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3958 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 154.1 MB.
-System memory in use after: 154.4 MB.
-
-Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 4484.
-Total: 4.848600 ms (FindLiveObjects: 0.282100 ms CreateObjectMapping: 0.201900 ms MarkObjects: 4.328000 ms  DeleteObjects: 0.035700 ms)
-
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 98.315351 seconds.
-  path: Assets/PlayerHealthBar.cs
-  artifactKey: Guid(c9cd2ada650b4e94ea082aa8453d12d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerHealthBar.cs using Guid(c9cd2ada650b4e94ea082aa8453d12d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b3819025bec52298ff345222370a9b8') in 0.011742 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 64.702496 seconds.
-  path: Assets/Prefabs/Enemy.prefab
-  artifactKey: Guid(752df46d87ac2384486af5660afc381e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy.prefab using Guid(752df46d87ac2384486af5660afc381e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '600276b7f2a6e203f9e3a1cac382783e') in 0.280824 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000247 seconds.
-  path: Assets/Prefabs/HealthBar.prefab
-  artifactKey: Guid(ddcc1af9b1099d74a9e71f67300ccf22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/HealthBar.prefab using Guid(ddcc1af9b1099d74a9e71f67300ccf22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '772650d02821668d2035086c849e685a') in 0.045361 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.170379 seconds.
-  path: Assets/Prefabs/Enemy.prefab
-  artifactKey: Guid(752df46d87ac2384486af5660afc381e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy.prefab using Guid(752df46d87ac2384486af5660afc381e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccf740dc5c883912cb9edb6a592a25fc') in 0.080658 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000228 seconds.
-  path: Assets/Prefabs/HealthBar.prefab
-  artifactKey: Guid(ddcc1af9b1099d74a9e71f67300ccf22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/HealthBar.prefab using Guid(ddcc1af9b1099d74a9e71f67300ccf22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28880fa07e6cfe07e6307a04d5be7cf9') in 0.043933 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.466433 seconds.
-  path: Assets/Prefabs/Enemy.prefab
-  artifactKey: Guid(752df46d87ac2384486af5660afc381e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy.prefab using Guid(752df46d87ac2384486af5660afc381e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ca39b1025166dc6a480989243cacc84') in 0.071510 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000177 seconds.
-  path: Assets/Prefabs/HealthBar.prefab
-  artifactKey: Guid(ddcc1af9b1099d74a9e71f67300ccf22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/HealthBar.prefab using Guid(ddcc1af9b1099d74a9e71f67300ccf22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9dd6318f8ef7d6d26cc41e4391427c1b') in 0.028795 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.614407 seconds.
-  path: Assets/Prefabs/Enemy.prefab
-  artifactKey: Guid(752df46d87ac2384486af5660afc381e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy.prefab using Guid(752df46d87ac2384486af5660afc381e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3eb2a4fd258d56b503d0aba0be6fff9') in 0.058215 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000200 seconds.
-  path: Assets/Prefabs/HealthBar.prefab
-  artifactKey: Guid(ddcc1af9b1099d74a9e71f67300ccf22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/HealthBar.prefab using Guid(ddcc1af9b1099d74a9e71f67300ccf22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee5fc726938773b0b916aa7a9c709fbc') in 0.022469 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 11.054197 seconds.
-  path: Assets/Prefabs/Enemy.prefab
-  artifactKey: Guid(752df46d87ac2384486af5660afc381e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy.prefab using Guid(752df46d87ac2384486af5660afc381e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5317b2e7fd5a6b0ec34daa58c94ba8a6') in 0.069694 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.393883 seconds.
-  path: Assets/Prefabs/Enemy.prefab
-  artifactKey: Guid(752df46d87ac2384486af5660afc381e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy.prefab using Guid(752df46d87ac2384486af5660afc381e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fc9bb7b68fd067e698c6af32336342e4') in 0.070282 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.905568 seconds.
-  path: Assets/Prefabs/Enemy.prefab
-  artifactKey: Guid(752df46d87ac2384486af5660afc381e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy.prefab using Guid(752df46d87ac2384486af5660afc381e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '077abdbe578081fc4d7c91e91e1ffaef') in 0.064044 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.404279 seconds.
-  path: Assets/Prefabs/Enemy.prefab
-  artifactKey: Guid(752df46d87ac2384486af5660afc381e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy.prefab using Guid(752df46d87ac2384486af5660afc381e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e33e2e0a61bd1738107eb40f1ee8c48') in 0.068650 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.960565 seconds.
-  path: Assets/Prefabs/Enemy.prefab
-  artifactKey: Guid(752df46d87ac2384486af5660afc381e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy.prefab using Guid(752df46d87ac2384486af5660afc381e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2d8cc8a6dac0a6fd110a551463f5339') in 0.063318 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.801794 seconds.
-  path: Assets/Prefabs/PlayerHealthBar.prefab
-  artifactKey: Guid(3944782679807a24a868bb742136ee1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PlayerHealthBar.prefab using Guid(3944782679807a24a868bb742136ee1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1c882216a82abbd60b6f9bd1ffaa9342') in 0.021752 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.166988 seconds.
-  path: Assets/Prefabs/Enemy.prefab
-  artifactKey: Guid(752df46d87ac2384486af5660afc381e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/Enemy.prefab using Guid(752df46d87ac2384486af5660afc381e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7d252da2a073a25f9fcfe4e657888dac') in 0.076647 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.193981 seconds.
-  path: Assets/Prefabs/PlayerHealthBar.prefab
-  artifactKey: Guid(3944782679807a24a868bb742136ee1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PlayerHealthBar.prefab using Guid(3944782679807a24a868bb742136ee1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9627beddcf310ee9da09b8308b4d6081') in 0.019580 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.591141 seconds.
-  path: Assets/Prefabs/PlayerHealthBar.prefab
-  artifactKey: Guid(3944782679807a24a868bb742136ee1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PlayerHealthBar.prefab using Guid(3944782679807a24a868bb742136ee1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a2cea4dda42c53e4ece1ed3494283e0') in 0.022234 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.235613 seconds.
-  path: Assets/Prefabs/PlayerHealthBar.prefab
-  artifactKey: Guid(3944782679807a24a868bb742136ee1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PlayerHealthBar.prefab using Guid(3944782679807a24a868bb742136ee1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77d77e6f4241e50a4e0e43ad336ead12') in 0.026661 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.152892 seconds.
-  path: Assets/Ferr/2DTerrain/Examples/Assets/GooPlayer.prefab
-  artifactKey: Guid(5341b97540614344baa449dd89da06ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Ferr/2DTerrain/Examples/Assets/GooPlayer.prefab using Guid(5341b97540614344baa449dd89da06ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78d739a8f7762a69f63a3943452dd098') in 0.079411 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.921375 seconds.
-  path: Assets/Prefabs/PlayerHealthBar.prefab
-  artifactKey: Guid(3944782679807a24a868bb742136ee1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/PlayerHealthBar.prefab using Guid(3944782679807a24a868bb742136ee1f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c85e0f6f5e391876f5b7342e44f9a8e') in 0.016023 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 47.583838 seconds.
-  path: Assets/PlayerHealth.cs
-  artifactKey: Guid(f4a937f55965be241b3c50aee6aaf879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerHealth.cs using Guid(f4a937f55965be241b3c50aee6aaf879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2b5c39fd410c53bb08fded7a5b6adec') in 0.014546 seconds 
-========================================================================
-Received Prepare
-Registering precompiled user dll's ...
-Registered in 0.010888 seconds.
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\kiara\Documents\GitHub\IntermediateDevFinal\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\kiara\Documents\GitHub\IntermediateDevFinal\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 0.82 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Mono: successfully reloaded assembly
-- Completed reload, in  2.628 seconds
-Domain Reload Profiling:
-	ReloadAssembly (2628ms)
-		BeginReloadAssembly (204ms)
+	ReloadAssembly (1490ms)
+		BeginReloadAssembly (167ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (8ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (64ms)
-		EndReloadAssembly (2324ms)
-			LoadAssemblies (184ms)
+			CreateAndSetChildDomain (57ms)
+		EndReloadAssembly (1249ms)
+			LoadAssemblies (108ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (833ms)
-			ReleaseScriptCaches (2ms)
-			RebuildScriptCaches (112ms)
-			SetupLoadedEditorAssemblies (960ms)
+			SetupTypeCache (445ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (66ms)
+			SetupLoadedEditorAssemblies (469ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (8ms)
+				InitializePlatformSupportModulesInManaged (6ms)
 				SetLoadedEditorAssemblies (1ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (125ms)
-				ProcessInitializeOnLoadAttributes (796ms)
-				ProcessInitializeOnLoadMethodAttributes (17ms)
-				AfterProcessingInitializeOnLoad (11ms)
+				BeforeProcessingInitializeOnLoad (77ms)
+				ProcessInitializeOnLoadAttributes (364ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (9ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (25ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
 Platform modules already initialized, skipping
-Shader 'Ferr/2D Terrain/Pixel Lit/Lightmap Textured Vertex Color Transparent (8 lights|lightmap +0 light)': fallback shader 'Ferr/Lit Textured Vertex Color Transparent (4 lights|lightmap +1 light)' not found
 Shader 'Ferr/2D Terrain/Pixel Lit/Lightmap Textured Vertex Color (8 lights|lightmap +0 light)': fallback shader 'Ferr/Lit Textured Vertex Color (4 lights|lightmap +1 light)' not found
-Refreshing native plugins compatible for Editor in 1.57 ms, found 4 plugins.
+Shader 'Ferr/2D Terrain/Pixel Lit/Lightmap Textured Vertex Color Transparent (8 lights|lightmap +0 light)': fallback shader 'Ferr/Lit Textured Vertex Color Transparent (4 lights|lightmap +1 light)' not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3959 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 154.2 MB.
-System memory in use after: 154.5 MB.
+Unloading 3960 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 156.7 MB.
+System memory in use after: 156.9 MB.
 
-Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 4489.
-Total: 4.187700 ms (FindLiveObjects: 0.321400 ms CreateObjectMapping: 0.219900 ms MarkObjects: 3.609800 ms  DeleteObjects: 0.035500 ms)
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 4570.
+Total: 3.864900 ms (FindLiveObjects: 0.484800 ms CreateObjectMapping: 0.244100 ms MarkObjects: 3.102200 ms  DeleteObjects: 0.032900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 2095.969738 seconds.
+  path: Assets/DamagePlayer.cs
+  artifactKey: Guid(dc5421037a720ac4aad758d5032aef64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DamagePlayer.cs using Guid(dc5421037a720ac4aad758d5032aef64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f079c768e946868b57694b90d0880f0') in 0.030495 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007405 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\kiara\Documents\GitHub\IntermediateDevFinal\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\kiara\Documents\GitHub\IntermediateDevFinal\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.99 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.129 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2130ms)
+		BeginReloadAssembly (230ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (16ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (113ms)
+		EndReloadAssembly (1817ms)
+			LoadAssemblies (146ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (619ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (95ms)
+			SetupLoadedEditorAssemblies (805ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (184ms)
+				ProcessInitializeOnLoadAttributes (597ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
+Platform modules already initialized, skipping
+Shader 'Ferr/2D Terrain/Pixel Lit/Lightmap Textured Vertex Color (8 lights|lightmap +0 light)': fallback shader 'Ferr/Lit Textured Vertex Color (4 lights|lightmap +1 light)' not found
+Shader 'Ferr/2D Terrain/Pixel Lit/Lightmap Textured Vertex Color Transparent (8 lights|lightmap +0 light)': fallback shader 'Ferr/Lit Textured Vertex Color Transparent (4 lights|lightmap +1 light)' not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3961 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 156.8 MB.
+System memory in use after: 157.0 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 4574.
+Total: 3.728600 ms (FindLiveObjects: 0.278000 ms CreateObjectMapping: 0.196300 ms MarkObjects: 3.223600 ms  DeleteObjects: 0.030100 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -597,52 +375,56 @@ AssetImportParameters requested are different than current active one (requested
 ========================================================================
 Received Prepare
 Registering precompiled user dll's ...
-Registered in 0.011747 seconds.
+Registered in 0.008370 seconds.
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\kiara\Documents\GitHub\IntermediateDevFinal\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\kiara\Documents\GitHub\IntermediateDevFinal\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
 Native extension for WindowsStandalone target not found
-Refreshing native plugins compatible for Editor in 1.21 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 1.13 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.860 seconds
+- Completed reload, in  2.127 seconds
 Domain Reload Profiling:
-	ReloadAssembly (3861ms)
-		BeginReloadAssembly (290ms)
+	ReloadAssembly (2127ms)
+		BeginReloadAssembly (175ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (13ms)
+			DisableScriptedObjects (10ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (81ms)
-		EndReloadAssembly (3340ms)
-			LoadAssemblies (284ms)
+			CreateAndSetChildDomain (47ms)
+		EndReloadAssembly (1865ms)
+			LoadAssemblies (140ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (1603ms)
-			ReleaseScriptCaches (1ms)
-			RebuildScriptCaches (87ms)
-			SetupLoadedEditorAssemblies (1144ms)
+			SetupTypeCache (484ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (74ms)
+			SetupLoadedEditorAssemblies (1037ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (1ms)
+				SetLoadedEditorAssemblies (0ms)
 				RefreshPlugins (1ms)
-				BeforeProcessingInitializeOnLoad (166ms)
-				ProcessInitializeOnLoadAttributes (943ms)
-				ProcessInitializeOnLoadMethodAttributes (13ms)
-				AfterProcessingInitializeOnLoad (12ms)
+				BeforeProcessingInitializeOnLoad (91ms)
+				ProcessInitializeOnLoadAttributes (921ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (8ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (20ms)
+			AwakeInstancesAfterBackupRestoration (16ms)
 Platform modules already initialized, skipping
-Shader 'Ferr/2D Terrain/Pixel Lit/Lightmap Textured Vertex Color Transparent (8 lights|lightmap +0 light)': fallback shader 'Ferr/Lit Textured Vertex Color Transparent (4 lights|lightmap +1 light)' not found
-Shader 'Ferr/2D Terrain/Pixel Lit/Lightmap Textured Vertex Color (8 lights|lightmap +0 light)': fallback shader 'Ferr/Lit Textured Vertex Color (4 lights|lightmap +1 light)' not found
-Refreshing native plugins compatible for Editor in 1.08 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3959 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 154.3 MB.
-System memory in use after: 154.5 MB.
+Script error: OnCollisionEnter2D
+This message parameter has to be of type: Collision2D
+The message will be ignored.
 
-Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 4492.
-Total: 4.051600 ms (FindLiveObjects: 0.279800 ms CreateObjectMapping: 0.189400 ms MarkObjects: 3.546100 ms  DeleteObjects: 0.035500 ms)
+Shader 'Ferr/2D Terrain/Pixel Lit/Lightmap Textured Vertex Color (8 lights|lightmap +0 light)': fallback shader 'Ferr/Lit Textured Vertex Color (4 lights|lightmap +1 light)' not found
+Shader 'Ferr/2D Terrain/Pixel Lit/Lightmap Textured Vertex Color Transparent (8 lights|lightmap +0 light)': fallback shader 'Ferr/Lit Textured Vertex Color Transparent (4 lights|lightmap +1 light)' not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3961 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 156.9 MB.
+System memory in use after: 157.2 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 4577.
+Total: 3.607000 ms (FindLiveObjects: 0.306800 ms CreateObjectMapping: 0.207600 ms MarkObjects: 3.060900 ms  DeleteObjects: 0.030800 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
@@ -657,7 +439,428 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 85.030220 seconds.
-  path: Assets/PlayerHealth.cs
-  artifactKey: Guid(f4a937f55965be241b3c50aee6aaf879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/PlayerHealth.cs using Guid(f4a937f55965be241b3c50aee6aaf879) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e23ffd9effb3e7506af0a20f0713b6f5') in 0.024310 seconds 
+  Time since last request: 58.405053 seconds.
+  path: Assets/DamagePlayer.cs
+  artifactKey: Guid(dc5421037a720ac4aad758d5032aef64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/DamagePlayer.cs using Guid(dc5421037a720ac4aad758d5032aef64) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f63b4d1b727fd2d93cbdfdc6ec6aae6') in 0.008135 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 35.589110 seconds.
+  path: Assets/Animation/spritesheet (2).png
+  artifactKey: Guid(3bb2c29a6a5e46843b15811ed9c11c0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/spritesheet (2).png using Guid(3bb2c29a6a5e46843b15811ed9c11c0e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abde82828f8fa962debd284f6a931c5b') in 0.128156 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008576 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\kiara\Documents\GitHub\IntermediateDevFinal\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\kiara\Documents\GitHub\IntermediateDevFinal\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.83 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.794 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1794ms)
+		BeginReloadAssembly (176ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (55ms)
+		EndReloadAssembly (1518ms)
+			LoadAssemblies (148ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (589ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (70ms)
+			SetupLoadedEditorAssemblies (548ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (7ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (96ms)
+				ProcessInitializeOnLoadAttributes (424ms)
+				ProcessInitializeOnLoadMethodAttributes (11ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (18ms)
+Platform modules already initialized, skipping
+Script error: OnCollisionEnter2D
+This message parameter has to be of type: Collision2D
+The message will be ignored.
+
+Shader 'Ferr/2D Terrain/Pixel Lit/Lightmap Textured Vertex Color (8 lights|lightmap +0 light)': fallback shader 'Ferr/Lit Textured Vertex Color (4 lights|lightmap +1 light)' not found
+Shader 'Ferr/2D Terrain/Pixel Lit/Lightmap Textured Vertex Color Transparent (8 lights|lightmap +0 light)': fallback shader 'Ferr/Lit Textured Vertex Color Transparent (4 lights|lightmap +1 light)' not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3962 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 157.5 MB.
+System memory in use after: 157.7 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 4599.
+Total: 5.743500 ms (FindLiveObjects: 0.368200 ms CreateObjectMapping: 0.207900 ms MarkObjects: 5.128900 ms  DeleteObjects: 0.037500 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 82.062229 seconds.
+  path: Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Circle.png
+  artifactKey: Guid(a86470a33a6bf42c4b3595704624658b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.2d.sprite/Editor/ObjectMenuCreation/DefaultAssets/Textures/v2/Circle.png using Guid(a86470a33a6bf42c4b3595704624658b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '407bf333efe6579c4c53b8fbfd03cc35') in 0.115230 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011014 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\kiara\Documents\GitHub\IntermediateDevFinal\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\kiara\Documents\GitHub\IntermediateDevFinal\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.96 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.447 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2447ms)
+		BeginReloadAssembly (239ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (11ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (70ms)
+		EndReloadAssembly (2076ms)
+			LoadAssemblies (198ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (750ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (110ms)
+			SetupLoadedEditorAssemblies (791ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (11ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (219ms)
+				ProcessInitializeOnLoadAttributes (533ms)
+				ProcessInitializeOnLoadMethodAttributes (14ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (26ms)
+Platform modules already initialized, skipping
+Script error: OnCollisionEnter2D
+This message parameter has to be of type: Collision2D
+The message will be ignored.
+
+Shader 'Ferr/2D Terrain/Pixel Lit/Lightmap Textured Vertex Color (8 lights|lightmap +0 light)': fallback shader 'Ferr/Lit Textured Vertex Color (4 lights|lightmap +1 light)' not found
+Shader 'Ferr/2D Terrain/Pixel Lit/Lightmap Textured Vertex Color Transparent (8 lights|lightmap +0 light)': fallback shader 'Ferr/Lit Textured Vertex Color Transparent (4 lights|lightmap +1 light)' not found
+Refreshing native plugins compatible for Editor in 1.11 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3962 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 157.9 MB.
+System memory in use after: 158.2 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 4619.
+Total: 11.838900 ms (FindLiveObjects: 0.814500 ms CreateObjectMapping: 0.634400 ms MarkObjects: 10.327100 ms  DeleteObjects: 0.061000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 24.718791 seconds.
+  path: Assets/Prefabs/Enemy.prefab
+  artifactKey: Guid(752df46d87ac2384486af5660afc381e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/Enemy.prefab using Guid(752df46d87ac2384486af5660afc381e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '46733bca2c7526c99a4e4e34447133b9') in 0.142348 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006632 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\kiara\Documents\GitHub\IntermediateDevFinal\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\kiara\Documents\GitHub\IntermediateDevFinal\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.437 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1437ms)
+		BeginReloadAssembly (160ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (51ms)
+		EndReloadAssembly (1214ms)
+			LoadAssemblies (107ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (393ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (52ms)
+			SetupLoadedEditorAssemblies (529ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (88ms)
+				ProcessInitializeOnLoadAttributes (409ms)
+				ProcessInitializeOnLoadMethodAttributes (15ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (20ms)
+Platform modules already initialized, skipping
+Script error: OnCollisionEnter2D
+This message parameter has to be of type: Collision2D
+The message will be ignored.
+
+Shader 'Ferr/2D Terrain/Pixel Lit/Lightmap Textured Vertex Color (8 lights|lightmap +0 light)': fallback shader 'Ferr/Lit Textured Vertex Color (4 lights|lightmap +1 light)' not found
+Shader 'Ferr/2D Terrain/Pixel Lit/Lightmap Textured Vertex Color Transparent (8 lights|lightmap +0 light)': fallback shader 'Ferr/Lit Textured Vertex Color Transparent (4 lights|lightmap +1 light)' not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3961 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 157.9 MB.
+System memory in use after: 158.2 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 4623.
+Total: 3.790400 ms (FindLiveObjects: 0.290400 ms CreateObjectMapping: 0.196800 ms MarkObjects: 3.271500 ms  DeleteObjects: 0.030900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 268.862751 seconds.
+  path: Assets/Prefabs/EnemyPatrol.cs
+  artifactKey: Guid(8fc253132c4ed424ab1f815ad79c9b39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/EnemyPatrol.cs using Guid(8fc253132c4ed424ab1f815ad79c9b39) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9768b202da285718ee6dbc3b121bf826') in 0.024401 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.067662 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\kiara\Documents\GitHub\IntermediateDevFinal\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\kiara\Documents\GitHub\IntermediateDevFinal\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.02 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.920 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1920ms)
+		BeginReloadAssembly (150ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (42ms)
+		EndReloadAssembly (1679ms)
+			LoadAssemblies (131ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (472ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (81ms)
+			SetupLoadedEditorAssemblies (848ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (6ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (393ms)
+				ProcessInitializeOnLoadAttributes (430ms)
+				ProcessInitializeOnLoadMethodAttributes (10ms)
+				AfterProcessingInitializeOnLoad (8ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (17ms)
+Platform modules already initialized, skipping
+Shader 'Ferr/2D Terrain/Pixel Lit/Lightmap Textured Vertex Color (8 lights|lightmap +0 light)': fallback shader 'Ferr/Lit Textured Vertex Color (4 lights|lightmap +1 light)' not found
+Shader 'Ferr/2D Terrain/Pixel Lit/Lightmap Textured Vertex Color Transparent (8 lights|lightmap +0 light)': fallback shader 'Ferr/Lit Textured Vertex Color Transparent (4 lights|lightmap +1 light)' not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3961 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 157.8 MB.
+System memory in use after: 158.1 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 4626.
+Total: 3.646200 ms (FindLiveObjects: 0.305900 ms CreateObjectMapping: 0.200700 ms MarkObjects: 3.106000 ms  DeleteObjects: 0.032700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007441 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\kiara\Documents\GitHub\IntermediateDevFinal\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\kiara\Documents\GitHub\IntermediateDevFinal\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.723 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1724ms)
+		BeginReloadAssembly (154ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (1506ms)
+			LoadAssemblies (108ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (611ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (608ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (68ms)
+				ProcessInitializeOnLoadAttributes (518ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Shader 'Ferr/2D Terrain/Pixel Lit/Lightmap Textured Vertex Color (8 lights|lightmap +0 light)': fallback shader 'Ferr/Lit Textured Vertex Color (4 lights|lightmap +1 light)' not found
+Shader 'Ferr/2D Terrain/Pixel Lit/Lightmap Textured Vertex Color Transparent (8 lights|lightmap +0 light)': fallback shader 'Ferr/Lit Textured Vertex Color Transparent (4 lights|lightmap +1 light)' not found
+Refreshing native plugins compatible for Editor in 1.03 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3961 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 157.8 MB.
+System memory in use after: 158.1 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 4629.
+Total: 4.477900 ms (FindLiveObjects: 0.374200 ms CreateObjectMapping: 0.233700 ms MarkObjects: 3.837000 ms  DeleteObjects: 0.032100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 781.982214 seconds.
+  path: Assets/Scripts/PlayerMovement.cs
+  artifactKey: Guid(27276ba409f6f5f4ea1a08e20cb4184a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerMovement.cs using Guid(27276ba409f6f5f4ea1a08e20cb4184a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a1f1eb760cf114205d6c2634952400ef') in 0.021523 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 92.450614 seconds.
+  path: Assets/Scripts/PlayerMovement.cs
+  artifactKey: Guid(27276ba409f6f5f4ea1a08e20cb4184a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerMovement.cs using Guid(27276ba409f6f5f4ea1a08e20cb4184a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc91a7cead633865313e7b5694af4da0') in 0.010199 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 80.426041 seconds.
+  path: Assets/Scripts/PlayerMovement.cs
+  artifactKey: Guid(27276ba409f6f5f4ea1a08e20cb4184a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/PlayerMovement.cs using Guid(27276ba409f6f5f4ea1a08e20cb4184a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b1c56260e2f1f08335b5b0b0d283f88') in 0.034844 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.011384 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\kiara\Documents\GitHub\IntermediateDevFinal\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\kiara\Documents\GitHub\IntermediateDevFinal\Library\PackageCache\com.unity.visualscripting@1.6.1\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.77 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  2.715 seconds
+Domain Reload Profiling:
+	ReloadAssembly (2716ms)
+		BeginReloadAssembly (318ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (49ms)
+		EndReloadAssembly (2311ms)
+			LoadAssemblies (130ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (573ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (77ms)
+			SetupLoadedEditorAssemblies (460ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (5ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (360ms)
+				ProcessInitializeOnLoadMethodAttributes (9ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+Shader 'Ferr/2D Terrain/Pixel Lit/Lightmap Textured Vertex Color (8 lights|lightmap +0 light)': fallback shader 'Ferr/Lit Textured Vertex Color (4 lights|lightmap +1 light)' not found
+Shader 'Ferr/2D Terrain/Pixel Lit/Lightmap Textured Vertex Color Transparent (8 lights|lightmap +0 light)': fallback shader 'Ferr/Lit Textured Vertex Color Transparent (4 lights|lightmap +1 light)' not found
+Refreshing native plugins compatible for Editor in 0.90 ms, found 4 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3961 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 157.9 MB.
+System memory in use after: 158.1 MB.
+
+Unloading 22 unused Assets to reduce memory usage. Loaded Objects now: 4632.
+Total: 3.477000 ms (FindLiveObjects: 0.296500 ms CreateObjectMapping: 0.168400 ms MarkObjects: 2.981700 ms  DeleteObjects: 0.029600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
