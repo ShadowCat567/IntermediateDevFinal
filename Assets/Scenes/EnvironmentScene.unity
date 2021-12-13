@@ -20040,6 +20040,7 @@ GameObject:
   - component: {fileID: 1768733887}
   - component: {fileID: 1768733886}
   - component: {fileID: 1768733885}
+  - component: {fileID: 1768733889}
   m_Layer: 0
   m_Name: GoalObject
   m_TagString: Untagged
@@ -20072,7 +20073,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.008399263, y: 0.016795456}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -20083,7 +20084,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.6138811, y: 0.6306466}
   m_EdgeRadius: 0
 --- !u!212 &1768733887
 SpriteRenderer:
@@ -20126,7 +20127,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3cd37691f1cdcbb4882c00ea25700cfe, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -20145,12 +20146,31 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1768733884}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 429.43, y: 246, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 429.43, y: 245.78, z: 0}
+  m_LocalScale: {x: 1.4007, y: 1.4007, z: 1.4007}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!95 &1768733889
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1768733884}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e76df71f5bc3cb64a93e838ae90ee535, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1770589356
 GameObject:
   m_ObjectHideFlags: 0
@@ -23991,6 +24011,7 @@ GameObject:
   - component: {fileID: 2115028979}
   - component: {fileID: 2115028980}
   - component: {fileID: 2115028981}
+  - component: {fileID: 2115028982}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -24192,6 +24213,25 @@ MonoBehaviour:
   spearActive: 0
   shieldActive: 0
   weaponInHand: 1
+--- !u!95 &2115028982
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115028973}
+  m_Enabled: 0
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: e895d3a064cf6274d81214aa4b5ca93f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2128092524
 GameObject:
   m_ObjectHideFlags: 0
