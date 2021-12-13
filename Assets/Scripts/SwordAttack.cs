@@ -63,7 +63,7 @@ public class SwordAttack : MonoBehaviour
     {
         if(!player.GetComponent<PlayerAttack>().facingLeft)
         {
-            sword.transform.localPosition = new Vector3(0.87f, -0.34f, 0);
+            sword.transform.localPosition = new Vector3(0.63f, 0.02f, 0);
             sr.sprite = rightSprite;
             player.GetComponent<PlayerAttack>().facingLeft = true;
         }
@@ -73,7 +73,7 @@ public class SwordAttack : MonoBehaviour
     {
         if(player.GetComponent<PlayerAttack>().facingLeft)
         {
-            sword.transform.localPosition = new Vector3(-0.87f, -0.34f, 0);
+            sword.transform.localPosition = new Vector3(-0.63f, 0.02f, 0);
             sr.sprite = leftSprite;
             player.GetComponent<PlayerAttack>().facingLeft = false;
         }
