@@ -12,8 +12,13 @@ public class EnemyPatrol : MonoBehaviour
     //create enemy empty child, wallcheck, drag wallcheck into enemy patrol script and set radius
     //create edge check empty child as well
 
-    public float moveSpeed;
+    float moveSpeed;
     public bool moveRight; //whether he is moving left or right
+
+    private void Awake()
+    {
+        moveSpeed = Random.Range(0.5f, 4.0f);
+    }
 
     // Start is called before the first frame update
     void Start()
