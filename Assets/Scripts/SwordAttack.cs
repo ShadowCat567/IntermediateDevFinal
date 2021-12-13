@@ -50,7 +50,7 @@ public class SwordAttack : MonoBehaviour
     {
         Attack();
 
-        if (Input.GetKeyDown(KeyCode.F) && canUseSpecial && player.GetComponent<PlayerAttack>().swordActive)
+        if (Input.GetKeyDown(KeyCode.F) || Input.GetKeyDown(KeyCode.M) && canUseSpecial && player.GetComponent<PlayerAttack>().swordActive)
         {
             //perform special ability
             WaveAttack();
@@ -63,7 +63,7 @@ public class SwordAttack : MonoBehaviour
     {
         if(!player.GetComponent<PlayerAttack>().facingLeft)
         {
-            sword.transform.localPosition = new Vector3(0.87f, -0.34f, 0);
+            sword.transform.localPosition = new Vector3(0.75f, -0.27f, 0);
             sr.sprite = rightSprite;
             player.GetComponent<PlayerAttack>().facingLeft = true;
         }
@@ -73,7 +73,7 @@ public class SwordAttack : MonoBehaviour
     {
         if(player.GetComponent<PlayerAttack>().facingLeft)
         {
-            sword.transform.localPosition = new Vector3(-0.87f, -0.34f, 0);
+            sword.transform.localPosition = new Vector3(-0.75f, -0.27f, 0);
             sr.sprite = leftSprite;
             player.GetComponent<PlayerAttack>().facingLeft = false;
         }
@@ -84,7 +84,7 @@ public class SwordAttack : MonoBehaviour
         if (collision.gameObject.tag == "Enemy" && player.GetComponent<PlayerAttack>().swordActive)
         {
             //if sword collides with an enemy, make the enemy take one damage
-            collision.GetComponent<EnemyHealth>().enemyHealth -= 0.1f;
+            collision.GetComponent<EnemyHealth>().enemyHealth -= 0.2f;
         }
     }
 

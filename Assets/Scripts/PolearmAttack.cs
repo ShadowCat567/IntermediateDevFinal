@@ -35,7 +35,7 @@ public class PolearmAttack : MonoBehaviour
 
     public float cooldownSpear = 4.0f;
     public float spearCounter;
-    public TMP_Text spearCooldownTxt;
+    //public TMP_Text spearCooldownTxt;
 
     private void Awake()
     {
@@ -60,7 +60,7 @@ public class PolearmAttack : MonoBehaviour
     {
         Attack();
 
-        if (Input.GetKeyDown(KeyCode.F) && canUseSpecial && player.GetComponent<PlayerAttack>().spearActive)
+        if (Input.GetKeyDown(KeyCode.F) || Input.GetKeyDown(KeyCode.M) && canUseSpecial && player.GetComponent<PlayerAttack>().spearActive)
         {
             if(spearThrown)
             {
@@ -91,7 +91,7 @@ public class PolearmAttack : MonoBehaviour
     {
         if (!player.GetComponent<PlayerAttack>().facingLeft)
         {
-            spear.transform.localPosition = new Vector3(0.9f, -0.2f, 0);
+            spear.transform.localPosition = new Vector3(0.9f, -0.29f, 0);
             sr.sprite = rightSprite;
             player.GetComponent<PlayerAttack>().facingLeft = true;
         }
@@ -101,7 +101,7 @@ public class PolearmAttack : MonoBehaviour
     {
         if (player.GetComponent<PlayerAttack>().facingLeft)
         {
-            spear.transform.localPosition = new Vector3(-0.9f, -0.2f, 0);
+            spear.transform.localPosition = new Vector3(-0.9f, -0.29f, 0);
             sr.sprite = leftSprite;
             player.GetComponent<PlayerAttack>().facingLeft = false;
         }

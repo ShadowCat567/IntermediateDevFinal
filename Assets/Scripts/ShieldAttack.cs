@@ -20,7 +20,7 @@ public class ShieldAttack : MonoBehaviour
 
     bool hittingEnemy;
     bool canUseSpecial = true;
-    public TMP_Text sheildCooldownTxt;
+    //public TMP_Text sheildCooldownTxt;
     public float cooldownShield = 1.5f;
     public float shieldCounter;
 
@@ -53,7 +53,7 @@ public class ShieldAttack : MonoBehaviour
             StartCoroutine(Block());
         }
 
-        if (Input.GetKeyDown(KeyCode.F) && canUseSpecial && player.GetComponent<PlayerAttack>().shieldActive)
+        if (Input.GetKeyDown(KeyCode.F) || Input.GetKeyDown(KeyCode.M) && canUseSpecial && player.GetComponent<PlayerAttack>().shieldActive)
         {
             //finds a targetEnemy and moves to that targetEnemy, stunning it
             GameObject targetEnemy = EnemyInDetectDistance();
@@ -82,7 +82,7 @@ public class ShieldAttack : MonoBehaviour
     {
         if (!player.GetComponent<PlayerAttack>().facingLeft)
         {
-            shield.transform.localPosition = new Vector3(0.99f, -0.1f, 0);
+            shield.transform.localPosition = new Vector3(0.96f, -0.1f, 0);
             sr.sprite = rightSprite;
             player.GetComponent<PlayerAttack>().facingLeft = true;
         }
@@ -92,7 +92,7 @@ public class ShieldAttack : MonoBehaviour
     {
         if (player.GetComponent<PlayerAttack>().facingLeft)
         {
-            shield.transform.localPosition = new Vector3(-1.2f, 0.1f, 0);
+            shield.transform.localPosition = new Vector3(-1.1f, 0.1f, 0);
             sr.sprite = leftSprite;
             player.GetComponent<PlayerAttack>().facingLeft = false;
         }
@@ -125,7 +125,7 @@ public class ShieldAttack : MonoBehaviour
         canUseSpecial = false;
         while (counter < cooldown)
         {
-            sheildCooldownTxt.text = "Shield Cooldown: " + counter;
+            //sheildCooldownTxt.text = "Shield Cooldown: " + counter;
             shieldCooldownImg.color = new Color(1.0f, 1.0f, 1.0f, opacity);
             yield return new WaitForSeconds(0.5f);
             counter += 0.5f;
@@ -135,7 +135,7 @@ public class ShieldAttack : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         canUseSpecial = true;
         shieldCooldownImg.color = new Color(1.0f, 1.0f, 1.0f, 1.0f);
-        sheildCooldownTxt.text = "Shield Cooldown: READY";
+       // sheildCooldownTxt.text = "Shield Cooldown: READY";
     }
 
     IEnumerator Block()

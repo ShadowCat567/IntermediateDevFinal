@@ -96,6 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb24289a87287c545b56ad43ec2c6a39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 8469912170425888482, guid: 13622c546b58c7546ab052f7dda49b1a, type: 3}
+  totalEnemies: 3
+  enemy: {fileID: 3436523177793705581, guid: 752df46d87ac2384486af5660afc381e, type: 3}
   combatZone: {fileID: 0}
   enemyList: []
