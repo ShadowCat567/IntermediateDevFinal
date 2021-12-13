@@ -9,7 +9,8 @@ public class DamagePlayer : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            GetComponent<PlayerHealth>().playerHealth -= 0.1f;
+            //      collision.gameObject.GetComponent<>().playerHealth -= 0.1f;
+            collision.gameObject.GetComponent<PlayerHealth>().playerHealth -= 0.1f;
         }
     }
 
