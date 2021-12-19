@@ -19,6 +19,6 @@ public class PlayerHealth : MonoBehaviour
         //updates EnemyHealthTxt to enemy's current health
         healthBar.GetComponent<PlayerHealthBar>().UpdateHealthBar(playerHealth);
         //   enemyHealthTxt.text = "Health: " + enemyHealth;
-        Debug.Log(playerHealth.ToString());
+       // Debug.Log(playerHealth.ToString());
     }
 }

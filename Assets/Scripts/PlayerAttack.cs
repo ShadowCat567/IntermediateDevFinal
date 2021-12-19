@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class PlayerAttack : MonoBehaviour
 {
@@ -99,6 +100,11 @@ public class PlayerAttack : MonoBehaviour
             {
                 sheildObj.GetComponent<ShieldAttack>().LeftFacing();
             }
+        }
+
+        if(player.GetComponent<PlayerHealth>().playerHealth <= 0)
+        {
+            SceneManager.LoadScene("DefeatScreen");
         }
     }
 

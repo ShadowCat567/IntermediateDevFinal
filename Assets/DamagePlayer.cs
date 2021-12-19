@@ -13,16 +13,4 @@ public class DamagePlayer : MonoBehaviour
             collision.gameObject.GetComponent<PlayerHealth>().playerHealth -= 0.25f;
         }
     }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
